@@ -1,0 +1,39 @@
+.nav-bar-container {
+	height: 100px;
+	display: flex;
+	background-color: #08090C;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.page-title {
+	position: absolute;
+	left: 10px;
+	color: #44A1A0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+.nav-bar-link {
+	text-decoration: none;
+	font-family: 'Darker Grotesque', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #EADEDA;
+}
+
+.nav-bar-link:hover {
+	background-color: #2A2829;
+	color: #44A1A0;
+}
+
+.nav-bar-link:active {
+	background-color: white;
+	color: black;
+}
