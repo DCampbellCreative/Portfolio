@@ -13,8 +13,9 @@
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 	font-size: 50px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
+
 .nav-bar-link {
 	text-decoration: none;
 	font-family: 'Darker Grotesque', sans-serif;

@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@300;500;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
 
+:root {
+	--teal: #44A1A0;
+	--white: #EADEDA;
+	--black: #08090C;
+  --gray: #2A2829;
+	--opaque: rgba(0, 0, 0, 0);
+	--heading: 'Poppins', sans-serif;
+	--copy: 'Darker Grotesque', sans-serif;;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

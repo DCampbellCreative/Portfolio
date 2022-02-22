@@ -1,5 +1,5 @@
 body {
-	background-color: #2A2829;
+	background-color: var(--gray);
 }
 
 .project-list {
@@ -16,7 +16,7 @@ body {
 	display: inherit;
 	height: 375px;
 	width: 1050px;
-	background-color: #08090C;
+	background-color: var(--black);
 	border-radius: 10px;
 	margin: 15px;
 }
@@ -34,12 +34,10 @@ body {
 	grid-column-start: 1;
 	margin-left: 50px;
 	height: 285px;
-	/* align-content: space-around; */
 }
 
 .column-1-container {
 	display: block;
-	/* align-items: center; */
 	justify-content: space-around;
 	flex-flow: column;
 	height: 285px;
@@ -50,27 +48,28 @@ body {
 	display: block;
 	margin-bottom: -10px;
 	text-align: left;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--heading);
 	font-size: 50px;
 	font-weight: 600;
-	color: #EADEDA;
+	color: var(--white);
 }
 
 .card-body {
 	display: block;
 	margin-bottom: -5px;
-	font-family: 'Darker Grotesque', sans-serif;
+	font-family: var(--copy);
 	text-align: left;
 	font-size: large;
-	color: #EADEDA;
+	color: var(--white);
 }
 
 .project-tools {
 	display: block;
-	font-family: 'Darker Grotesque', sans-serif;
+	font-family: var(--copy);
 	text-align: left;
 	font-size: large;
-	color: #EADEDA;
+	font-style: italic;
+	color: var(--white);
 }
 
 .button-container {
@@ -82,15 +81,15 @@ body {
 	border-radius: 5px;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid #44A1A0;
-	font-family: 'Darker Grotesque', sans-serif;
+	border: 2px solid var(--teal);
+	font-family: var(--copy);
 	text-decoration: none;
 	text-transform: uppercase;
-	margin-right: 25px;
-	width: 150px;
+	margin-right: 20px;
+	width: 125px;
 	height: 30px;
-	background-color: rgba(0, 0, 0, 0) ;
-	color: #44A1A0;
+	background-color:  var(--opaque);
+	color: var(--teal);
 }
 
 .card-button:hover{
@@ -108,3 +107,13 @@ body {
 	height: 285px;
 	border-radius: 5px;
 }
+
+/* .tool-icons {
+	width: 500px;
+	justify-content: space-around;
+}
+
+.icon-img {
+	height: 50px;
+	margin: 50px;
+} */
