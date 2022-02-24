@@ -55,7 +55,7 @@ export const MyWork = () => {
 							</div>
 						</div>
 						<div className='column-2'>
-							<img className="card-image" src={require('../../assets/dontbudge.png')} alt="reactdex" />
+							<img className="card-image" src={require('../../assets/dontbudge2.png')} alt="reactdex" />
 						</div>
 					</div>
 				</div>
@@ -66,12 +66,12 @@ export const MyWork = () => {
 							<div className="column-1-container">
 								<div className="card-heading">Meet</div>
 								<p className="card-body">
-									A lightweight budgeting app created using vanilla JavaScript, HTML, and CSS.
-									Allows users to enter their budget and expenses and calculate their budget balance based upon these inputs.
-									Forms are validated  values can be submitted.
-									Expenses are displayed on screen and can easily be removed from display and calculation by clicking the "delete" button.
+									A PWA created and tested using AWS, React, Recharts, Serverless, Jest, and the Google Calendar API.
+									Created using a test-driven development technique.
+									Fetches and displays a list of programming events from the Google Calendar API. Visualizes data using Recharts.
+									Users can filter events by city, specify the number of events to display, show/hide event details, and use the app while offline.
 								</p>
-								<p className="project-tools">#HTML, #CSS, #JAVASCRIPT</p>
+								<p className="project-tools">#REACT, #GOOGLE, #AWS, #JEST</p>
 								<div className="button-container">
 									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Deployment</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/dont_budge" rel="noreferrer" target="_blank">Source Code</a>
@@ -80,7 +80,7 @@ export const MyWork = () => {
 							</div>
 						</div>
 						<div className='column-2'>
-							<img className="card-image" src={require('../../assets/dontbudge.png')} alt="reactdex" />
+							<img className="card-image" src={require('../../assets/meet.png')} alt="reactdex" />
 						</div>
 					</div>
 				</div>
@@ -88,22 +88,29 @@ export const MyWork = () => {
 				<div className="project-card">
 					<div className='card-container'>
 						<div className="column-1">
-							<h1 className="card-heading">ReactDex</h1>
-							<p className="card-body">
-								A Pokédex created using create-react-app, lodash, pokeapi.co, and React.
-								Loads and displays a list of Pokémon from pokeapi.co and displays their names and sprites.
-								The list is searchable by name, and sortable by number or name ascending and descending.
-								Clicking on a list item loads a modal showing front and back sprites, height, and types of desired Pokémon.</p>
-							<div className="button-container">
-								<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/">View Deployment</a>
-								<a className="card-button" href="https://github.com/DCampbellCreative/dont_budge">View Source Code</a>
+							<div className="column-1-container">
+								<div className="card-heading">FlixFix</div>
+								<p className="card-body">
+									Client side application created using Angular and TypeScript. Interacts with server side REST API and MongoDB database.
+									Users can register new accounts, login using existing accounts, and update and delete their current account.
+									Renders a list of movies stored in a MongoDB database.
+									Users can view detailed information about each title and add and remove titles from their favorites.
+								</p>
+								<p className="project-tools">#ANGULAR, #MONGODB, #TYPESCRIPT, #NODE.JS, #EXPRESS</p>
+								<div className="button-container">
+									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Deployment</a>
+									<a className="card-button" href="https://github.com/DCampbellCreative/dont_budge" rel="noreferrer" target="_blank">Source Code</a>
+									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">More Info</a>
+								</div>
 							</div>
 						</div>
 						<div className='column-2'>
-							<img className="card-image" src={require('../../assets/reactdex.png')} alt="reactdex" />
+							<img className="card-image" src={require('../../assets/flixfix.png')} alt="reactdex" />
 						</div>
 					</div>
 				</div>
+
+
 			</div>
 		</div>
 	)
