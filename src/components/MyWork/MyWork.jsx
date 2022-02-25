@@ -16,8 +16,8 @@ export const MyWork = () => {
 								<p className="card-body">
 									A Pokédex created using create-react-app, lodash, pokeapi.co, and React.
 									Loads and displays a list of Pokémon from pokeapi.co and displays their names and sprites.
-									The list is searchable by name, and sortable by number or name ascending and descending.
-									Clicking on a list item loads a modal showing front and back sprites, height, and types of desired Pokémon.
+									The list is searchable by name, and sortable by ID number or name ascending and descending.
+									Clicking on a list item loads a modal showing front and back sprites, height, and types of selected Pokémon.
 								</p>
 								<p className="project-tools">#HTML, #CSS, #REACT, #LODASH</p>
 								<div className="button-container">
@@ -42,9 +42,9 @@ export const MyWork = () => {
 								<div className="card-heading">Don't Budge</div>
 								<p className="card-body">
 									A lightweight budgeting app created using vanilla JavaScript, HTML, and CSS.
-									Allows users to enter their budget and expenses and calculate their budget balance based upon these inputs.
-									Forms are validated  values can be submitted.
-									Expenses are displayed on screen and can easily be removed from display and calculation by clicking the "delete" button.
+									Allows users to enter their budget and expenses and calculate a balance based upon these inputs.
+									Forms are validated before values can be submitted.
+									Expenses are displayed on screen and can be removed from display and calculation by clicking the "delete" button.
 								</p>
 								<p className="project-tools">#HTML, #CSS, #JAVASCRIPT</p>
 								<div className="button-container">
@@ -66,15 +66,15 @@ export const MyWork = () => {
 							<div className="column-1-container">
 								<div className="card-heading">Meet</div>
 								<p className="card-body">
-									A PWA created and tested using AWS, React, Recharts, Serverless, Jest, and the Google Calendar API.
-									Created using a test-driven development technique.
+									A PWA created using AWS, React, Recharts, Serverless, Jest, and the Google Calendar API.
+									Approached using a test-driven development technique.
 									Fetches and displays a list of programming events from the Google Calendar API. Visualizes data using Recharts.
 									Users can filter events by city, specify the number of events to display, show/hide event details, and use the app while offline.
 								</p>
 								<p className="project-tools">#REACT, #GOOGLE, #AWS, #JEST</p>
 								<div className="button-container">
-									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Deployment</a>
-									<a className="card-button" href="https://github.com/DCampbellCreative/dont_budge" rel="noreferrer" target="_blank">Source Code</a>
+									<a className="card-button" href="https://dcampbellcreative.github.io/meet//" rel="noreferrer" target="_blank">Deployment</a>
+									<a className="card-button" href="https://github.com/DCampbellCreative/meet" rel="noreferrer" target="_blank">Source Code</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">More Info</a>
 								</div>
 							</div>
@@ -98,8 +98,8 @@ export const MyWork = () => {
 								</p>
 								<p className="project-tools">#ANGULAR, #MONGODB, #TYPESCRIPT, #NODE.JS, #EXPRESS</p>
 								<div className="button-container">
-									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Deployment</a>
-									<a className="card-button" href="https://github.com/DCampbellCreative/dont_budge" rel="noreferrer" target="_blank">Source Code</a>
+									<a className="card-button" href="https://dcampbellcreative.github.io/myFlix-Angular-client/movies" rel="noreferrer" target="_blank">Deployment</a>
+									<a className="card-button" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Source Code</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">More Info</a>
 								</div>
 							</div>

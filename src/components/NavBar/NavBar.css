@@ -32,9 +32,19 @@
 .nav-bar-link:hover {
 	background-color: #2A2829;
 	color: #44A1A0;
+	opacity: .75;
 }
 
-.nav-bar-link:active {
-	background-color: white;
-	color: black;
+.nav-bar-link-active {
+	text-decoration: none;
+	font-family: 'Darker Grotesque', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #2A2829;
+	color: #44A1A0;
 }
