@@ -6,9 +6,26 @@
 	justify-content: flex-end;
 }
 
-.page-title {
+.title-container {
 	position: absolute;
 	left: 10px;
+}
+
+.title-flex-container {
+	display: flex;
+	align-items: center;
+}
+
+.logo-image {
+	width: 60px;
+	display: inline-flex;
+	/* margin-top: 15px; */
+	margin-right: 7px;
+	margin-bottom: 5px;
+}
+
+.page-title {
+	display: inline-flex;
 	color: #44A1A0;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;

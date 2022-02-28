@@ -41,7 +41,7 @@ export const MyWork = () => {
 							<div className="column-1-container">
 								<div className="card-heading">Don't Budge</div>
 								<p className="card-body">
-									A lightweight budgeting app created using vanilla JavaScript, HTML, and CSS.
+									A budgeting app created using vanilla JavaScript, HTML, and CSS.
 									Allows users to enter their budget and expenses and calculate a balance based upon these inputs.
 									Forms are validated before values can be submitted.
 									Expenses are displayed on screen and can be removed from display and calculation by clicking the "delete" button.
