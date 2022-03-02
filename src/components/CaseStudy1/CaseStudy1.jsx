@@ -1,10 +1,10 @@
 import React from 'react';
-import './CaseStudy.css';
+import './CaseStudy1.css';
 
 export const CaseStudy1 = () => {
 	return (
 		<div className="case-study-container">
-			<h1>Don't Budge</h1>
+			<h1>ReactDex</h1>
 			<p>
 
 			</p>

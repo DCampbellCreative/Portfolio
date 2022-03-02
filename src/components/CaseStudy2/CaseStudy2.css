@@ -1,0 +1,100 @@
+.case-study-2-container {
+	display: grid;
+	grid-template-columns: 
+        [viewport-start] minmax(1em, 1fr)
+        [container-start] minmax(0, 30em) [container-end]
+        minmax(1em, 1fr) [viewport-end];
+	justify-items: center;
+}
+
+.case-study-2-card {
+	grid-column: viewport; 
+	display: inherit;
+	height: auto;
+	width: 850px;
+	background-color: var(--black);
+	border-radius: 10px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.case-study-2-card-container {
+	display: grid;
+	grid-gap: 1.5rem;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	grid-template-rows: repeat(4, minmax(0, auto));
+}
+
+.cs2-container-1 {
+	display: grid;
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+.cs2-flex-container {
+	display: flex;
+}
+
+.cs2-flex-2 {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.case-study-2-container-2 {
+	display: grid;
+	grid-column-start: 1;
+	grid-row-start: 2;
+}
+
+.case-study-2-container-3 {
+	display: grid;
+	grid-column-start: 1;
+	grid-row-start: 3;
+}
+
+.case-study-2-container-4 {
+	display: grid;
+	grid-column-start: 1;
+	grid-row-start: 4;
+}
+
+.case-study-2-heading {
+	display: block;
+	margin-bottom: -15px;
+	/* margin-left: 50px; */
+	text-align: left;
+	font-family: var(--heading);
+	font-size: 30px;
+	font-weight: 600;
+	color: var(--white);
+}
+
+.case-study-2-body {	
+	display: block;
+	font-family: var(--copy);
+	text-align: left;
+	font-size: large;
+	color: var(--white);
+}
+
+.cs2-image {
+	display: flex;
+	flex: 1;
+	margin-left: 25px;
+	margin-top: 25px;
+	text-align: right;
+	/* align-self: center; */
+	height: 275px;
+	border-radius: 5px;
+}
+
+.cs2-image-2 {
+	display: flex;
+	flex: 1;
+	margin-right: 25px;
+	text-align: right;
+	/* align-self: center; */
+	height: 300px;
+	border-radius: 5px;
+}

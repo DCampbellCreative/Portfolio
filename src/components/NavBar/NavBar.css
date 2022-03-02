@@ -3,17 +3,15 @@
 	display: flex;
 	background-color: #08090C;
 	align-items: center;
-	justify-content: flex-end;
+	/* justify-content: flex-end; */
 }
 
-.title-container {
-	position: absolute;
-	left: 10px;
-}
-
-.title-flex-container {
+.nav-title-container {
 	display: flex;
+	flex: 1;
 	align-items: center;
+	text-align: left;
+	margin-right: 250px;
 }
 
 .logo-image {
@@ -31,6 +29,13 @@
 	font-weight: 600;
 	font-size: 50px;
 	/* text-transform: uppercase; */
+}
+
+.nav-link-container {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	text-align: right;
 }
 
 .nav-bar-link {

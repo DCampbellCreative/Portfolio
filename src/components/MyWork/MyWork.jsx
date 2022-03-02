@@ -1,5 +1,6 @@
 import React from 'react';
 import './MyWork.css';
+import { NavLink } from 'react-router-dom';
 
 
 export const MyWork = () => {
@@ -50,7 +51,7 @@ export const MyWork = () => {
 								<div className="button-container">
 									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Deployment</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/dont_budge" rel="noreferrer" target="_blank">Source Code</a>
-									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">More Info</a>
+									<NavLink className="card-button" to="/projects/dontbudge">More Info</NavLink>
 								</div>
 							</div>
 						</div>
