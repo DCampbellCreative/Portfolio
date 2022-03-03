@@ -14,10 +14,9 @@ export const Home = () => {
 
 					<div className="home-column-2">
 						<div className='home-column-2-container'>
-							<h1 className='home-heading'>Welcome</h1>
-							<p className='home-body'>Hi, my name is Doug Campbell. I'm a web developer with a background in graphic design and the restaurant industry.
-								I have a strong eye for design with frontend, backend, and UI skills. I'm a quick learner with a passion for Technology.
-								Looking to be part of a team of passionate professionals, and develop projects for the greater good.</p>
+							<h1 className='home-heading'>Hi, my name is Doug Campbell</h1>
+							<p className='home-body'>I'm a web developer located in Columbia, SC</p>
+							<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">Resume</a>
 						</div>
 					</div>
 				</div>

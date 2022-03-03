@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MyWork.css';
 import { NavLink } from 'react-router-dom';
+import { CaseStudy1 } from '../CaseStudy1/CaseStudy1';
+import { CaseStudy2 } from '../CaseStudy2/CaseStudy2'
 
 
 export const MyWork = () => {
+	const [showCs1, setShowCs1] = useState(false);
+	const [showCs2, setShowCs2] = useState(false);
 
 	return (
 		<div className="my-work-container">
@@ -24,7 +28,8 @@ export const MyWork = () => {
 								<div className="button-container">
 									<a className="card-button" href="https://dcampbellcreative.github.io/react-pokedex/" rel="noreferrer" target="_blank">Deployment</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">Source Code</a>
-									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">More Info</a>
+									<a className="card-button" onClick={() => setShowCs1(true)}>More Info</a>
+									<CaseStudy1 onClose={() => setShowCs1(false)} showCs1={showCs1} />
 								</div>
 							</div>
 						</div>
@@ -51,7 +56,8 @@ export const MyWork = () => {
 								<div className="button-container">
 									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Deployment</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/dont_budge" rel="noreferrer" target="_blank">Source Code</a>
-									<NavLink className="card-button" to="/projects/dontbudge">More Info</NavLink>
+									<a className="card-button" onClick={() => setShowCs2(true)}>More Info</a>
+									<CaseStudy2 onClose={() => setShowCs2(false)} showCs2={showCs2} />
 								</div>
 							</div>
 						</div>

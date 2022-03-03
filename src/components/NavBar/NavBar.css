@@ -15,10 +15,10 @@
 }
 
 .logo-image {
-	width: 60px;
+	height: 75px;
 	display: inline-flex;
 	/* margin-top: 15px; */
-	margin-right: 7px;
+	margin-left: 30px;
 	margin-bottom: 5px;
 }
 
@@ -36,13 +36,14 @@
 	flex: 1;
 	align-items: center;
 	text-align: right;
+	margin-right: -125px;
 }
 
 .nav-bar-link {
 	text-decoration: none;
 	font-family: 'Darker Grotesque', sans-serif;
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 400;
 	height: 100px;
 	width: 100px;
 	display: flex;
@@ -61,7 +62,7 @@
 	text-decoration: none;
 	font-family: 'Darker Grotesque', sans-serif;
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 400;
 	height: 100px;
 	width: 100px;
 	display: flex;

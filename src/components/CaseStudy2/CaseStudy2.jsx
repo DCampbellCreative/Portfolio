@@ -1,18 +1,21 @@
 import React from 'react';
 import './CaseStudy2.css';
 
-export const CaseStudy2 = () => {
+export const CaseStudy2 = (props) => {
+	if (!props.showCs2) {
+		return null
+	}
 	return (
-		<div className="case-study-2-container">
-			<div className="case-study-2-card">
+		<div className="case-study-2-container" onClick={props.onClose}>
+			<div className="case-study-2-card" onClick={e => e.stopPropagation()}>
 				<div className="case-study-2-card-container">
 
 					<div className="cs2-container-1">
 						<div className="cs2-flex-container">
 							<div className='cs2-flex-2'>
-								<h1 className="case-study-2-heading">Don't Budge</h1>
+								<h1 className="case-study-2-heading  cs2-heading-2">Don't Budge</h1>
 
-								<p className='case-study-2-body'>
+								<p className='case-study-2-body cs2-body-2'>
 									Don't Budge is a lightweight budgeting app created using JavaScript, HTML, and CSS.
 									It allows users to enter their budget and expenses, and calculate a remaining balance based upon these inputs.
 									My goal was to further my understanding of the fundamentals of JavaScript and learn how to display and edit lists dynamically.
@@ -26,7 +29,7 @@ export const CaseStudy2 = () => {
 					</div>
 
 					<div className="case-study-2-container-2">
-						<h1 className="case-study-2-heading">Process and Challenges</h1>
+						<h1 className="case-study-2-heading cs2-heading-3">Process and Challenges</h1>
 						<p className='case-study-2-body'>
 							I began by creating HTML input fields with submit buttons to add user inputs as values.
 							The submit button on the budget field directly sets and displays the budget value.
@@ -59,8 +62,8 @@ export const CaseStudy2 = () => {
 					</div>
 
 					<div className="case-study-2-container-4">
-						<h1 className="case-study-2-heading">Results</h1>
-						<p className='case-study-2-body'>
+						<h1 className="case-study-2-heading cs2-heading-3">Results</h1>
+						<p className='case-study-2-body cs2-body-end'>
 							The final product took around two weeks to complete.
 							The resulting app allows users to set a budget, create and edit a list of expenses dynamically and view their
 							remaining balance based upon these inputs. All forms are validated to accept the correct values.
@@ -69,10 +72,19 @@ export const CaseStudy2 = () => {
 							a project similar to this in the future, I will be sure to work with objects off the bat so dynamically generated information can
 							be more descriptive and user friendly.
 						</p>
+						<div className='cs2-flex-container'>
+							<div className='cs2-flex-2'>
+								<h3 className='cs2-credits'>Credits</h3>
+								<h3 className='cs2-credits'>	Role: Lead Developer</h3>
+								<h3 className='cs2-credits cs2-credits-end'>Mentor: Gerrit Uit den Boogaart</h3>
+							</div>
+							<button className='cs2-button' onClick={props.onClose}>Close</button>
+						</div>
+
 					</div>
 
 				</div>
-			</div>
-		</div>
+			</div >
+		</div >
 	)
 } 

@@ -10,17 +10,20 @@ export const AboutMe = () => {
 
 					<div className='about-me-column-1'>
 						<div className='about-me-column-1-container'>
-							<h1 className='about-me-heading'>Experience</h1>
+							<h1 className='about-me-heading'>About Me</h1>
 							<p className='about-me-body'>
 								Over the last few years I've owned and ran two restaurants and had to adapt the businesses to survive and prosper during the pandemic.
 								I'm proud of myself for meeting those challenges but it also led me to reevaluate my career and come to the realization that I wanted to be in a more creative field.
 								I studied Visual Communications at the University of South Carolina with a minor in graphic design.
 								I have developed many ads, print materials, and online content for a variety of companies, including my own.
+								When I'm not coding I enjoy watching films, 90's sitcoms, listening to music, and playing guitar.
+								I find learning a programming language is very similar to learning an instrument.
+								I'm always on the lookout for the newest song or story to move and inspire me.
 							</p>
 						</div>
 					</div>
 
-					<div className='about-me-column-2'>
+					{/* <div className='about-me-column-2'>
 						<div className='about-me-column-2-container'>
 							<h1 className='about-me-heading'>Interests</h1>
 							<p className='about-me-body'>
@@ -30,13 +33,21 @@ export const AboutMe = () => {
 								I'm always on the lookout for the newest song or story to move and inspire me.
 							</p>
 						</div>
-					</div>
+					</div> */}
 
-					<div className='about-me-column-3'>
-						<div className='about-me-column-3-container'>
+					<div className='about-me-column-2'>
+						<div className='about-me-column-2-container'>
 							<h1 className='about-me-heading'>Skills</h1>
 							<p className='about-me-body'>
-
+								<ul className='skill-list'>
+									<li>Abode Illustrator</li>
+									<li>Angular</li>
+									<li>CSS</li>
+									<li>GitHub</li>
+									<li>HTML</li>
+									<li>JavaScript</li>
+									<li>React</li>
+								</ul>
 							</p>
 						</div>
 					</div>
