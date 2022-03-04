@@ -14,14 +14,14 @@
 	overflow: scroll;
 }
 
-.case-study-2-card {
+.cs-card {
 	grid-column: viewport; 
 	display: inherit;
 	height: auto;
 	width: 850px;
 	background-color: whitesmoke;
-	border-radius: 10px;
-	margin: 15px;
+	/* border-radius: 10px; */
+	/* margin: 15px; */
 	padding: 15px;
 }
 
@@ -32,7 +32,7 @@
 	grid-template-rows: repeat(4, minmax(0, auto));
 }
 
-.cs1-container-1 {
+.cs-container-1 {
 	display: grid;
 	grid-column-start: 1;
 	grid-row-start: 1;
@@ -48,22 +48,22 @@
 	flex: 1;
 }
 
-.cs1-container-2 {
+.cs-container-2 {
 	display: grid;
 	grid-column-start: 1;
 	grid-row-start: 2;
 }
 
-.cs1-container-3 {
+.cs-container-3 {
 	display: grid;
 	grid-column-start: 1;
 	grid-row-start: 3;
 }
 
-.cs1-heading {
+.cs-heading {
 	display: block;
 	margin-bottom: -10px;
-	/* margin-left: 50px; */
+	margin-left: 30px;
 	text-align: left;
 	font-family: var(--heading);
 	font-size: 30px;
@@ -71,21 +71,12 @@
 	color: var(--black);
 }
 
-.cs1-heading-2 {
-	margin-left: 30px;
-}
-
-.cs2-heading-3 {
+.cs-heading-2 {
 	margin-left: 30px;
 	margin-top: 0px;
 }
 
-.cs2-heading-3{
-	margin-left: 30px;
-	margin-top: 0px;
-}
-
-.cs1-body {	
+.cs-body {	
 	display: block;
 	font-family: var(--copy);
 	text-align: left;
@@ -93,14 +84,20 @@
 	color: var(--black);
 	margin-left: 30px;
 	margin-right: 30px;
+	/* border-bottom: 2px solid black; */
 }
 
-.cs1-body-2 {
-	margin-right: 25px;
+.cs-body-end {
+	border-bottom: none;
 }
 
-.cs2-body-end {
-	margin-bottom: 0px;
+.cs-border {
+	/* display: flex; */
+	margin: auto;
+	/* height: 2px; */
+	border-bottom: 2px solid black;
+	width: 95%;
+	text-align: center;
 }
 
 .cs2-image {
@@ -139,7 +136,7 @@
 	margin-bottom: 30px;
 }
 
-.cs2-button {
+.cs-button {
 	display: flex;
 	border-radius: 5px;
 	justify-content: center;
@@ -156,13 +153,6 @@
 	color: var(--black);
 }
 
-.cs2-button:hover{
+.cs-button:hover{
 	cursor: pointer;
-}
-
-.break {
-	height: 2px;
-	background-color: black;
-	color: black;
-	border-color:black;
 }
