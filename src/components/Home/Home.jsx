@@ -14,9 +14,18 @@ export const Home = () => {
 
 					<div className="home-column-2">
 						<div className='home-column-2-container'>
-							<h1 className='home-heading'>Hi, my name is Doug Campbell</h1>
-							<p className='home-body'>I'm a web developer located in Columbia, SC</p>
-							<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">Resume</a>
+							<h1 className='home-heading'>Doug Campbell</h1>
+							<p className='home-body'>A full stacked developer located in Columbia, SC</p>
+
+							<div className='row-home'>
+
+								<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">Resume</a>
+								<a className='link-button' href="https://github.com/DCampbellCreative/" rel="noreferrer" target="_blank"><img className="home-icon" src={require('../../assets/linkedin.png')} alt="linkedinlogowhite" /></a>
+								<a className='link-button' href="https://www.linkedin.com/in/douglass-campbell/" rel="noreferrer" target="_blank"><img className="home-icon hi-2" src={require('../../assets/github2.png')} alt="githublogowhite" /></a>
+								<a className='link-button' href="mailto:dcampbellcreative@gmail.com" rel="noreferrer" target="_blank"><img className="home-icon hi-3" src={require('../../assets/email.png')} alt="emailiconwhite" /></a>
+
+
+							</div>
 						</div>
 					</div>
 				</div>

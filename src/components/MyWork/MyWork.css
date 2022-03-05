@@ -94,6 +94,7 @@ body {
 
 .card-button:hover{
 	cursor: pointer;
+	opacity: .75;
 }
 
 .column-2 {
