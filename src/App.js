@@ -25,12 +25,15 @@ function App() {
         </Routes>
       </Router> */}
       {/* <Route exact path='/' element={<Home />} /> */}
+
       <NavBar />
       {/* <NavBarSpacer /> */}
-      <Home />
-      <AboutMe />
-      <MyWork />
-      <Contact />
+      <div className='main'>
+        <Home />
+        <AboutMe />
+        <MyWork />
+        <Contact />
+      </div>
     </div>
   );
 }

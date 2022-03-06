@@ -1,4 +1,6 @@
 .home-container {
+	padding-top: 75px;
+	margin-bottom: 0px;
 	display: grid;
 	grid-template-columns: 
         [viewport-start] minmax(1em, 1fr)
@@ -9,14 +11,14 @@
 }
 
 .home-card {
-	/* margin-top: 100px; */
+	
 	grid-column: viewport; 
 	display: inherit;
 	height: 375px;
 	width: 1050px;
 	/* background-color: var(--black); */
 	border-radius: 10px;
-	margin-top: 100px;
+	/* margin-top: 100px; */
 }
 
 .home-card-container {

@@ -1,14 +1,14 @@
 .nav-bar-container {
 	height: 100px;
+	width: 100%; 
 	display: flex;
 	background-color: #08090C;
 	align-items: center;
-	position: fixed;
-	z-index: 1;
-	width: 100%; 
-	/* margin-bottom: 25px; */
-	/* top: 0; */
-	/* justify-content: flex-end; */
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 2;
+	
+	top: 0;
 }
 
 .nav-title-container {
@@ -38,10 +38,8 @@
 
 .nav-link-container {
 	display: flex;
-	flex: 1;
 	align-items: center;
 	text-align: right;
-	margin-right: -398px;
 }
 
 .nav-bar-link {
@@ -61,6 +59,7 @@
 	background-color: #2A2829;
 	color: #44A1A0;
 	opacity: .75;
+	cursor: pointer;
 }
 
 .nav-bar-link-active {
@@ -75,4 +74,9 @@
 	justify-content: center;
 	background-color: #2A2829;
 	color: #44A1A0;
+}
+
+.nav-bar-active-link:hover {
+	
+	cursor: pointer;
 }

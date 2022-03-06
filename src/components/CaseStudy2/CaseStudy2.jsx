@@ -6,7 +6,7 @@ export const CaseStudy2 = (props) => {
 		return null
 	}
 	return (
-		<div className="case-study-2-container" onClick={props.onClose}>
+		<div className="cs-container" onClick={props.onClose}>
 			<div className="cs-card" onClick={e => e.stopPropagation()}>
 				<div className="case-study-2-card-container">
 
