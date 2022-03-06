@@ -31,6 +31,7 @@ function App() {
       <div className='outer-container'>
         <NavBar />
         <div className='main'>
+          {/* <NavBarSpacer /> */}
           <Home />
           <AboutMe />
           <MyWork />

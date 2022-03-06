@@ -11,7 +11,7 @@ export const MyWork = () => {
 	return (
 		<div className="my-work-container" id='projects'>
 			<div className="project-list">
-
+				<div className='spacer'></div>
 				<div className="project-card">
 					<div className='card-container'>
 						<div className="column-1">

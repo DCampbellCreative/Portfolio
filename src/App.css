@@ -5,12 +5,13 @@
 .outer-container {
   /* display: flex; */
   height: 100%;
+  position: sticky;
   /* position: absolute; */
 }
 
 .main {
   display: flex;
-  /* position: absolute; */
+  /* position: fixed; */
   flex-direction: column;
   /* height: 100vh; */
 }

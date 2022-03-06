@@ -3,8 +3,9 @@ import './Home.css';
 
 export const Home = () => {
 	return (
-		<div className='home-container' id='home'>
 
+		<div className='home-container' id='home'>
+			<div className='spacer'></div>
 			<div className='home-card'>
 				<div className='home-card-container'>
 
@@ -29,5 +30,6 @@ export const Home = () => {
 			</div>
 
 		</div>
+
 	);
 }

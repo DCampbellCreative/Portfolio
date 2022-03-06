@@ -13,6 +13,7 @@
         minmax(1em, 1fr) [viewport-end];
 	justify-items: center;
 	overflow: scroll;
+	overflow-x: hidden;
 }
 
 .cs-card {
