@@ -26,13 +26,16 @@ function App() {
       </Router> */}
       {/* <Route exact path='/' element={<Home />} /> */}
 
-      <NavBar />
+
       {/* <NavBarSpacer /> */}
-      <div className='main'>
-        <Home />
-        <AboutMe />
-        <MyWork />
-        <Contact />
+      <div className='outer-container'>
+        <NavBar />
+        <div className='main'>
+          <Home />
+          <AboutMe />
+          <MyWork />
+          <Contact />
+        </div>
       </div>
     </div>
   );

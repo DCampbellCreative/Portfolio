@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './MyWork.css';
-import { NavLink } from 'react-router-dom';
 import { CaseStudy1 } from '../CaseStudy1/CaseStudy1';
 import { CaseStudy2 } from '../CaseStudy2/CaseStudy2'
 

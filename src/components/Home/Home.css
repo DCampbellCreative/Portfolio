@@ -1,6 +1,4 @@
 .home-container {
-	padding-top: 75px;
-	margin-bottom: 0px;
 	display: grid;
 	grid-template-columns: 
         [viewport-start] minmax(1em, 1fr)
