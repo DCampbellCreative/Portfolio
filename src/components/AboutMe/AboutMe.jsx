@@ -3,7 +3,7 @@ import './AboutMe.css';
 
 export const AboutMe = () => {
 	return (
-		<div className='about-me-container'>
+		<div className='about-me-container' id='about'>
 
 			<div className='about-me-card'>
 				<div className='about-me-card-container'>

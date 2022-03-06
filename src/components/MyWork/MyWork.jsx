@@ -10,7 +10,7 @@ export const MyWork = () => {
 	const [showCs2, setShowCs2] = useState(false);
 
 	return (
-		<div className="my-work-container">
+		<div className="my-work-container" id='projects'>
 			<div className="project-list">
 
 				<div className="project-card">

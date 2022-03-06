@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavBar.css';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 export const NavBar = () => {
 
@@ -11,11 +12,13 @@ export const NavBar = () => {
 				{/* <h1 className="page-title">DCampbellCreative</h1> */}
 			</div>
 			<div className='nav-link-container'>
-				<NavLink className={({ isActive }) => (isActive ? 'nav-bar-link-active' : 'nav-bar-link')} to="/home">Home</NavLink>
-				<NavLink className={({ isActive }) => (isActive ? 'nav-bar-link-active' : 'nav-bar-link')} to="/aboutme">About Me</NavLink>
-				<NavLink className={({ isActive }) => (isActive ? 'nav-bar-link-active' : 'nav-bar-link')} to="/projects">Projects</NavLink>
+				<Link className='nav-bar-link' activeClass='nav-bar-link-active' to="home" spy={true} smooth={true}>Home</Link>
+				<Link className='nav-bar-link' activeClass='nav-bar-link-active' to="about" spy={true} smooth={true}>About Me</Link>
+				<Link className='nav-bar-link' activeClass='nav-bar-link-active' to="projects" spy={true} smooth={true}>Projects</Link>
 				{/* <NavLink className={({ isActive }) => (isActive ? 'nav-bar-link-active' : 'nav-bar-link')} to="/resume">Resume</NavLink> */}
-				<NavLink className={({ isActive }) => (isActive ? 'nav-bar-link-active' : 'nav-bar-link')} to="/contact">Contact</NavLink>
+				<Link className='nav-bar-link' activeClass='nav-bar-link-active' to="contact" spy={true} smooth={true}>Contact</Link>
+
+
 			</div>
 		</div>
 	)

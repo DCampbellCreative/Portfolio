@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Contact = () => {
 	return (
-		<div className='about-me-container'>
+		<div className='about-me-container' id='contact'>
 
 			<div className='about-me-card'>
 				<div className='about-me-card-container'>

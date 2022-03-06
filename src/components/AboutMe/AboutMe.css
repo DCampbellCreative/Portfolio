@@ -1,4 +1,5 @@
 .about-me-container {
+	/* margin-top: 100px; */
 	display: grid;
 	grid-template-columns: 
         [viewport-start] minmax(1em, 1fr)

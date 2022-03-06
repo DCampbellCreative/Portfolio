@@ -1,0 +1,9 @@
+.nav-bar-spacer-container {
+	width: 100%;
+	height: 100px;
+	display: block;
+	visibility: hidden;
+	margin-bottom: 50px;
+	position: relative;
+	top: 0;
+}

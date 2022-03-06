@@ -3,7 +3,7 @@ import './Home.css';
 
 export const Home = () => {
 	return (
-		<div className='home-container'>
+		<div className='home-container' id='home'>
 
 			<div className='home-card'>
 				<div className='home-card-container'>
@@ -15,7 +15,7 @@ export const Home = () => {
 					<div className="home-column-2">
 						<div className='home-column-2-container'>
 							<h1 className='home-heading'>Doug Campbell</h1>
-							<p className='home-body'>A full stacked developer located in Columbia, SC</p>
+							<p className='home-body'>A full stack developer located in Columbia, SC</p>
 
 							<div className='row-home'>
 
