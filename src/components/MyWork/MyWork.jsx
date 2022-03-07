@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import './MyWork.css';
 import { CaseStudy1 } from '../CaseStudy1/CaseStudy1';
-import { CaseStudy2 } from '../CaseStudy2/CaseStudy2'
+import { CaseStudy2 } from '../CaseStudy2/CaseStudy2';
+import { CaseStudy3 } from '../CaseStudy3/CaseStudy3';
+import { CaseStudy4 } from '../CaseStudy4/CaseStudy4';
 
 
 export const MyWork = () => {
 	const [showCs1, setShowCs1] = useState(false);
 	const [showCs2, setShowCs2] = useState(false);
+	const [showCs3, setShowCs3] = useState(false);
+	const [showCs4, setShowCs4] = useState(false);
 
 	return (
 		<div className="my-work-container" id='projects'>
 			<div className="project-list">
-				<div className='spacer'></div>
+				{/* <div className='spacer'></div> */}
 				<div className="project-card">
 					<div className='card-container'>
 						<div className="column-1">
@@ -25,7 +29,7 @@ export const MyWork = () => {
 								</p>
 								<p className="project-tools">#HTML, #CSS, #REACT, #LODASH</p>
 								<div className="button-container">
-									<a className="card-button" href="https://dcampbellcreative.github.io/react-pokedex/" rel="noreferrer" target="_blank">Deployment</a>
+									<a className="card-button" href="https://dcampbellcreative.github.io/react-pokedex/" rel="noreferrer" target="_blank">Website</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">Source Code</a>
 									<a className="card-button" onClick={() => setShowCs1(true)}>More Info</a>
 									<CaseStudy1 onClose={() => setShowCs1(false)} showCs1={showCs1} />
@@ -53,7 +57,7 @@ export const MyWork = () => {
 								</p>
 								<p className="project-tools">#HTML, #CSS, #JAVASCRIPT</p>
 								<div className="button-container">
-									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Deployment</a>
+									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Website</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/dont_budge" rel="noreferrer" target="_blank">Source Code</a>
 									<a className="card-button" onClick={() => setShowCs2(true)}>More Info</a>
 									<CaseStudy2 onClose={() => setShowCs2(false)} showCs2={showCs2} />
@@ -79,9 +83,10 @@ export const MyWork = () => {
 								</p>
 								<p className="project-tools">#REACT, #GOOGLE, #AWS, #JEST</p>
 								<div className="button-container">
-									<a className="card-button" href="https://dcampbellcreative.github.io/meet//" rel="noreferrer" target="_blank">Deployment</a>
+									<a className="card-button" href="https://dcampbellcreative.github.io/meet//" rel="noreferrer" target="_blank">Website</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/meet" rel="noreferrer" target="_blank">Source Code</a>
-									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">More Info</a>
+									<a className="card-button" onClick={() => setShowCs3(true)}>More Info</a>
+									<CaseStudy3 onClose={() => setShowCs3(false)} showCs3={showCs3} />
 								</div>
 							</div>
 						</div>
@@ -104,14 +109,15 @@ export const MyWork = () => {
 								</p>
 								<p className="project-tools">#ANGULAR, #MONGODB, #TYPESCRIPT, #NODE.JS, #EXPRESS</p>
 								<div className="button-container">
-									<a className="card-button" href="https://dcampbellcreative.github.io/myFlix-Angular-client/movies" rel="noreferrer" target="_blank">Deployment</a>
+									<a className="card-button" href="https://dcampbellcreative.github.io/myFlix-Angular-client/welcome" rel="noreferrer" target="_blank">Website</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Source Code</a>
-									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">More Info</a>
+									<a className="card-button" onClick={() => setShowCs4(true)}>More Info</a>
+									<CaseStudy4 onClose={() => setShowCs4(false)} showCs4={showCs4} />
 								</div>
 							</div>
 						</div>
 						<div className='column-2'>
-							<img className="card-image" src={require('../../assets/flixfix.png')} alt="reactdex" />
+							<img className="card-image" src={require('../../assets/flixfix.png')} alt="flixfix" />
 						</div>
 					</div>
 				</div>

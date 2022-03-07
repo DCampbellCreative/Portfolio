@@ -26,17 +26,16 @@ function App() {
 
 
       {/* <NavBarSpacer /> */}
-      <div className='outer-container'>
-        <NavBar />
-        <div className='main'>
-          {/* <NavBarSpacer /> */}
-          <Home />
-          <AboutMe />
-          <MyWork />
-          <Contact />
-        </div>
-      </div>
+
+      <NavBar />
+
+      {/* <NavBarSpacer /> */}
+      <Home />
+      <AboutMe />
+      <MyWork />
+      <Contact />
     </div>
+
   );
 }
 

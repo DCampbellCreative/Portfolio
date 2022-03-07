@@ -43,11 +43,21 @@
 	align-items: center;
 	font-size: 25px;
 	color: var(--white);
+	
+}
+
+.contact-body:hover {
+	opacity: .75;
 }
 
 .contact-icon {
 	height: 45px;
 	margin-right: 15px;
+	text-decoration: none;
+}
+
+.contact-icon:hover {
+	opacity: .75;
 }
 
 .contact-column-1 {

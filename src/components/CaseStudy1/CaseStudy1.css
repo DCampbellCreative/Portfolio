@@ -74,6 +74,10 @@
 	color: var(--black);
 }
 
+.cs-heading-1 {
+	font-size: 40px;
+}
+
 .cs-heading-2 {
 	margin-left: 30px;
 	margin-top: 0px;
@@ -90,6 +94,10 @@
 	/* border-bottom: 2px solid black; */
 }
 
+.cs-body-1 {
+	display: flex;
+}
+
 .cs-body-end {
 	border-bottom: none;
 }
@@ -101,6 +109,25 @@
 	border-bottom: 2px solid black;
 	width: 95%;
 	text-align: center;
+}
+.image-container {
+	display: block;
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 25px;
+}
+
+.cs-image {
+	display: flex;
+	flex: 1;
+	margin-left: 25px;
+	margin-right: 25px;
+	align-self: center;
+	/* margin-top: 35px; */
+	text-align: right;
+	/* align-self: center; */
+	height: 225px;
+	border-radius: 5px;
 }
 
 .cs2-image {

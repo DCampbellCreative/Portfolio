@@ -6,7 +6,7 @@
 	align-items: center;
 	position: sticky;
 	top: 0;
-	z-index: 2;
+	z-index: 1;
 }
 
 .nav-title-container {
@@ -51,6 +51,8 @@
 	align-items: center;
 	justify-content: center;
 	color: #EADEDA;
+	background-position: center;
+  transition: background 0.8s;
 }
 
 .nav-bar-link:hover {
@@ -58,6 +60,11 @@
 	color: #44A1A0;
 	opacity: .75;
 	cursor: pointer;
+}
+
+.nav-bar-link:active {
+	background-size: 100%;
+  transition: background 1s;
 }
 
 .nav-bar-link-active {
@@ -77,4 +84,18 @@
 .nav-bar-active-link:hover {
 	
 	cursor: pointer;
+}
+
+ .ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+/*
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+} */
+.ripple:active {
+  /* background-color: #6eb9f7; */
+  background-size: 100%;
+  transition: background 1s;
 }

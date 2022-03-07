@@ -14,7 +14,7 @@ export const CaseStudy1 = (props) => {
 					<div className="cs-container-1">
 						<h1 className="cs-heading">ReactDex</h1>
 
-						<div className='cs-body'>
+						<div className='cs-body cs-body-1'>
 							<p>
 								ReactDex is a single page application, or SPA, created using the Javascript library React, HTML, CSS, the NPM package Lodash,
 								and the pokeapi.co API. It displays a list of Pokémon loaded from an external application programming interface, or API.
@@ -23,8 +23,12 @@ export const CaseStudy1 = (props) => {
 								curriculum, I challenged myself to recreate it in React to implement new features and learn more about the library.
 								The current incarnation has many more features than the original.
 							</p>
+							<div className='image-container'>
+								<img className="cs-image" src={require('../../assets/casestudy1-1.png')} alt="jspokedex" />
+								<p>Original App</p>
+							</div>
 						</div>
-						{/* <img className="cs2-image" src={require('../../assets/casestudy2-1.png')} alt="dontbudge" /> */}
+
 					</div>
 
 					<div className='cs-border'></div>

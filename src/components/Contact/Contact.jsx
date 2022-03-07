@@ -5,7 +5,7 @@ export const Contact = () => {
 	return (
 
 		<div className='contact-container' id='contact'>
-			<div className='spacer'></div>
+			{/* <div className='spacer'></div> */}
 			<div className='contact-card'>
 				<div className='contact-card-container'>
 
@@ -17,7 +17,7 @@ export const Contact = () => {
 
 					<div className="contact-column-2">
 						<div className='contact-column-container'>
-							<a className='contact-icon' href="https://www.linkedin.com/in/douglass-campbell/" rel="noreferrer" target="_blank">	<span className='contact-body'><img className="home-icon" src={require('../../assets/resume-icon.png')} alt="resumelogowhite" />Download my resume</span></a>
+							<a className='contact-icon' href={require('../../assets/campbell-douglass-resume.pdf')} rel="noopener noreferrer" target="_blank" download>	<span className='contact-body'><img className="home-icon" src={require('../../assets/resume-icon.png')} alt="resumelogowhite" />Download my resume</span></a>
 							<a className='contact-icon' href="https://www.linkedin.com/in/douglass-campbell/" rel="noreferrer" target="_blank"><span className='contact-body'><img className="home-icon" src={require('../../assets/linkedin.png')} alt="linkedinlogowhite" />Add me on LinkedIn</span></a>
 						</div>
 					</div>
