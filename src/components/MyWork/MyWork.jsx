@@ -85,7 +85,7 @@ export const MyWork = () => {
 								<div className="button-container">
 									<a className="card-button" href="https://dcampbellcreative.github.io/meet//" rel="noreferrer" target="_blank">Website</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/meet" rel="noreferrer" target="_blank">Source Code</a>
-									<a className="card-button" onClick={() => setShowCs3(true)}>More Info</a>
+									<a className="card-button hidden" onClick={() => setShowCs3(true)}>More Info</a>
 									<CaseStudy3 onClose={() => setShowCs3(false)} showCs3={showCs3} />
 								</div>
 							</div>

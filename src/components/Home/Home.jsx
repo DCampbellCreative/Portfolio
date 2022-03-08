@@ -16,7 +16,7 @@ export const Home = () => {
 					<div className="home-column-2">
 						<div className='home-column-2-container'>
 							<h1 className='home-heading'>Doug Campbell</h1>
-							<p className='home-body'>A full stack developer located in Columbia, SC</p>
+							<p className='home-body'>Full stack developer located in Columbia, SC</p>
 
 							<div className='row-home'>
 								<a className="card-button" href={require('../../assets/campbell-douglass-resume.pdf')} rel="noopener noreferrer" target="_blank" download>Resume</a>

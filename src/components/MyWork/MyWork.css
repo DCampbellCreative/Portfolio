@@ -112,15 +112,8 @@ body {
 	display: flex;
 	align-self: center;
 	height: 285px;
-	border-radius: 5px;
 }
 
-/* .tool-icons {
-	width: 500px;
-	justify-content: space-around;
+.hidden {
+	visibility: hidden;
 }
-
-.icon-img {
-	height: 50px;
-	margin: 50px;
-} */

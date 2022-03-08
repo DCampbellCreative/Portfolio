@@ -42,12 +42,12 @@ export const CaseStudy4 = (props) => {
 								This project took three weeks to complete, about half the time it took me to create a similar app in React just a few months back. This definitely speaks to my progression as a programmer. Problems that, at first, seemed extremely complex began to seem simpler when broken down. Focusing on functions in one Angular file at a time instead of trying immediately to have it working across all the files in and outside of the component was very helpful.
 							</p>
 						</div>
-						<div className='cs2-flex-container'>
-							<div className='cs2-flex-2'>
-								<h3 className='cs2-credits'>Credits</h3>
-								<h3 className='cs2-credits'>Role: Lead Developer</h3>
-								<h3 className='cs2-credits'>Tutor: Adam Pagels</h3>
-								<h3 className='cs2-credits cs2-credits-end'>Mentor: Gerrit Uit den Boogaart</h3>
+						<div className='cs-flex-container'>
+							<div className='cs-flex-2'>
+								<h3 className='cs-credits'>Credits</h3>
+								<h3 className='cs-credits'>Role: Lead Developer</h3>
+								<h3 className='cs-credits'>Tutor: Adam Pagels</h3>
+								<h3 className='cs-credits cs-credits-end'>Mentor: Gerrit Uit den Boogaart</h3>
 							</div>
 							<button className='cs-button' onClick={props.onClose}>Close</button>
 						</div>
