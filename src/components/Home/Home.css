@@ -4,19 +4,15 @@
         [viewport-start] minmax(1em, 1fr)
         [container-start] minmax(0, 30em) [container-end]
         minmax(1em, 1fr) [viewport-end];
-	justify-items: center;
-	
+	justify-items: center;	
 }
 
 .home-card {
-	
 	grid-column: viewport; 
 	display: inherit;
 	height: 375px;
 	width: 1050px;
-	/* background-color: var(--black); */
 	border-radius: 10px;
-	/* margin-top: 100px; */
 }
 
 .spacer {
@@ -26,28 +22,16 @@
 
 .home-card-container {
 	display: flex;
-	/* margin-top: 100px; */
 	align-items: center;
-	/* display: grid;
-	grid-gap: 1.5rem;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	grid-template-rows: repeat(1, minmax(0, 1fr)); */
 }
-
-/* .home-column-1 {
-	display: grid;
-	grid-column-start: 1;
-} */
 
 .self-portrait {
 	display: flex;
 	flex: 1;
-	/* align-self: center; */
 	text-align: left;
 	margin-left: 150px;
 	margin-right: 50px;
 	height: 285px;
-	/* border-radius: 5px; */
 }
 
 
@@ -91,27 +75,25 @@
 }
 
 .row-home {
-
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: 100%;
 		align-items: center;
-		margin-top: 25px;
-		/* margin-top: -25px; */
-	
+		margin-top: 20px;
 }
 
 .link-button:hover {
 	cursor: pointer;
-	opacity: .75;
+	transition: .5s;
+	opacity: .5;
 }
 
 .home-icon {
-	height: 45px;
+	height: 35px;
 	margin-right: 15px;
 }
 
 .hi-3 {
-	height: 50px
+	height: 49px;
 }

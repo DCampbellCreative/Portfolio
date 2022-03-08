@@ -107,7 +107,7 @@ export const MyWork = () => {
 									Renders a list of movies stored in a MongoDB database.
 									Users can view detailed information about each title and add and remove titles from their favorites.
 								</p>
-								<p className="project-tools">#ANGULAR, #MONGODB, #TYPESCRIPT, #NODE.JS, #EXPRESS</p>
+								<p className="project-tools">#ANGULAR, #MONGODB, #TYPESCRIPT, #NODEJS, #EXPRESS</p>
 								<div className="button-container">
 									<a className="card-button" href="https://dcampbellcreative.github.io/myFlix-Angular-client/welcome" rel="noreferrer" target="_blank">Website</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Source Code</a>

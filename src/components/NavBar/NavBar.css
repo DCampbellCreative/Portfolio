@@ -10,7 +10,6 @@
 }
 
 .nav-title-container {
-	/* display: flex; */
 	flex: 1;
 	align-items: center;
 	text-align: left;
@@ -18,20 +17,9 @@
 }
 
 .logo-image {
-	height: 75px;
+	height: 90px;
 	display: inline-flex;
-	/* margin-top: 15px; */
 	margin-left: 30px;
-	margin-bottom: 5px;
-}
-
-.page-title {
-	display: inline-flex;
-	color: #44A1A0;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
-	font-size: 50px;
-	/* text-transform: uppercase; */
 }
 
 .nav-link-container {
@@ -43,8 +31,8 @@
 .nav-bar-link {
 	text-decoration: none;
 	font-family: 'Darker Grotesque', sans-serif;
-	font-size: 20px;
-	font-weight: 400;
+	font-size: 25px;
+	font-weight: 300;
 	height: 100px;
 	width: 100px;
 	display: flex;
@@ -52,13 +40,13 @@
 	justify-content: center;
 	color: #EADEDA;
 	background-position: center;
-  transition: background 0.8s;
+  transition: background 0.6s;
 }
 
 .nav-bar-link:hover {
-	background-color: #2A2829;
+	background-color: var(--gray);
 	color: #44A1A0;
-	opacity: .75;
+	/* opacity: .75; */
 	cursor: pointer;
 }
 
@@ -82,7 +70,6 @@
 }
 
 .nav-bar-active-link:hover {
-	
 	cursor: pointer;
 }
 
@@ -90,12 +77,9 @@
   background-position: center;
   transition: background 0.8s;
 }
-/*
-.ripple:hover {
-  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
-} */
+
 .ripple:active {
-  /* background-color: #6eb9f7; */
+
   background-size: 100%;
   transition: background 1s;
 }
