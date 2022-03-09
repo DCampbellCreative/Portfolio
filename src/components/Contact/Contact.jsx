@@ -3,10 +3,8 @@ import './Contact.css';
 
 export const Contact = () => {
 	return (
-
-		<div className='contact-container' id='contact'>
-			{/* <div className='spacer'></div> */}
-			<div className='contact-card'>
+		<footer className='contact-container' id='contact'>
+			<main className='contact-card'>
 				<div className='contact-card-container'>
 
 					<div className='contact-body'>
@@ -19,9 +17,10 @@ export const Contact = () => {
 						<span>/</span>
 						<a className='contact-link' href="mailto:dcampbellcreative@gmail.com" rel="noreferrer" target="_blank">Email</a>
 					</div>
+
 				</div>
-			</div>
-		</div>
+			</main>
+		</footer>
 
 	);
 }

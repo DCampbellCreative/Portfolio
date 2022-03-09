@@ -13,10 +13,10 @@ export const MyWork = () => {
 	const [showCs4, setShowCs4] = useState(false);
 
 	return (
-		<div className="my-work-container" id='projects'>
-			<div className="project-list">
-				{/* <div className='spacer'></div> */}
-				<div className="project-card">
+		<section className="my-work-container" id='projects'>
+			<main className="project-list">
+
+				<article className="project-card">
 					<div className='card-container'>
 						<div className="column-1">
 							<div className="column-1-container">
@@ -41,10 +41,10 @@ export const MyWork = () => {
 
 						</div>
 					</div>
-				</div>
+				</article>
 
 
-				<div className="project-card">
+				<article className="project-card">
 					<div className='card-container'>
 						<div className="column-1">
 							<div className="column-1-container">
@@ -68,35 +68,9 @@ export const MyWork = () => {
 							<img className="card-image" src={require('../../assets/dontbudge2.png')} alt="reactdex" />
 						</div>
 					</div>
-				</div>
+				</article>
 
-				<div className="project-card">
-					<div className='card-container'>
-						<div className="column-1">
-							<div className="column-1-container">
-								<div className="card-heading">Meet</div>
-								<p className="card-body">
-									A PWA created using AWS, React, Recharts, Serverless, Jest, and the Google Calendar API.
-									Approached using a test-driven development technique.
-									Fetches and displays a list of programming events from the Google Calendar API. Visualizes data using Recharts.
-									Users can filter events by city, specify the number of events to display, show/hide event details, and use the app while offline.
-								</p>
-								<p className="project-tools">#REACT, #GOOGLE, #AWS, #JEST</p>
-								<div className="button-container">
-									<a className="card-button" href="https://dcampbellcreative.github.io/meet//" rel="noreferrer" target="_blank">Website</a>
-									<a className="card-button" href="https://github.com/DCampbellCreative/meet" rel="noreferrer" target="_blank">Source Code</a>
-									<a className="card-button hidden" onClick={() => setShowCs3(true)}>More Info</a>
-									<CaseStudy3 onClose={() => setShowCs3(false)} showCs3={showCs3} />
-								</div>
-							</div>
-						</div>
-						<div className='column-2'>
-							<img className="card-image" src={require('../../assets/meet.png')} alt="reactdex" />
-						</div>
-					</div>
-				</div>
-
-				<div className="project-card">
+				<article className="project-card">
 					<div className='card-container'>
 						<div className="column-1">
 							<div className="column-1-container">
@@ -120,11 +94,36 @@ export const MyWork = () => {
 							<img className="card-image" src={require('../../assets/flixfix.png')} alt="flixfix" />
 						</div>
 					</div>
-				</div>
+				</article>
 
+				<article className="project-card">
+					<div className='card-container'>
+						<div className="column-1">
+							<div className="column-1-container">
+								<div className="card-heading">Meet</div>
+								<p className="card-body">
+									A PWA created using AWS, React, Recharts, Serverless, Jest, and the Google Calendar API.
+									Approached using a test-driven development technique.
+									Fetches and displays a list of programming events from the Google Calendar API. Visualizes data using Recharts.
+									Users can filter events by city, specify the number of events to display, show/hide event details, and use the app while offline.
+								</p>
+								<p className="project-tools">#REACT, #GOOGLE, #AWS, #JEST</p>
+								<div className="button-container">
+									<a className="card-button" href="https://dcampbellcreative.github.io/meet//" rel="noreferrer" target="_blank">Website</a>
+									<a className="card-button" href="https://github.com/DCampbellCreative/meet" rel="noreferrer" target="_blank">Source Code</a>
+									<a className="card-button hidden" onClick={() => setShowCs3(true)}>More Info</a>
+									<CaseStudy3 onClose={() => setShowCs3(false)} showCs3={showCs3} />
+								</div>
+							</div>
+						</div>
+						<div className='column-2'>
+							<img className="card-image" src={require('../../assets/meet.png')} alt="reactdex" />
+						</div>
+					</div>
+				</article>
 
-			</div>
-		</div>
+			</main>
+		</section>
 	)
 };
 

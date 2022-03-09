@@ -15,7 +15,7 @@
 	background-color: whitesmoke;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	min-height: 300px;
+	/* min-height: 400px; */
 }
 
 .about-me-card-container {
@@ -39,12 +39,13 @@
 	display: grid;
 	grid-column-start: 2;
 	margin: 10px;
+	justify-content: center;
 }
 
 .about-me-column-2-container {
 	display: flex;
 	flex-direction: column;
-	height: 250px;
+	height: auto;
 }
 
 .row {
@@ -53,32 +54,15 @@
   flex-wrap: wrap;
   width: 100%;
 	justify-content: center;
-	align-content: center;
 }
 
 .skill-list {
-	display: grid;
 	list-style: none;
 }
 
 .li-bullet {
 	width: 12px;
 	margin-right: 4px;
-	align-self: center;
-}
-
-.list-column {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.lc-1 {
-	margin-left: 85px;
-}
-
-.lc-2 {
-	margin-left: -15px;
 }
 
 .icon-images {
@@ -90,25 +74,30 @@
 	margin-right: 7px;
 }
 
+.ii-end {
+	margin-right: 0px
+}
+
 .ii-2 {
-	height: 20px;
-	margin-bottom: 12px;
+	height: 25px;
+	margin-bottom: 15px;
 }
 
 .ii-3 {
-	height: 45px;
+	height: 60px;
+}
+
+.ii-4 {
+	height: 55px
 }
 
 .cs-border-2 {
-	width: 50%;
 	display: flex;
 	height: 3px;
 	border-bottom: 3px solid var(--black);
-	width: 75%;
+	width: 100%;
 	text-align: center;
-	margin: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px
 }
 
 .about-me-heading {
@@ -124,24 +113,68 @@
 }
 
 .about-me-heading-2 {
-	margin-left: 0px;
 	text-align: center;
-	margin-bottom: 0px;
+	margin-left: 0;
+	margin-bottom: -10px;
 }
 
 .about-me-body {
 	margin-left: 50px;
 	font-family: var(--copy);
-	text-align: left;
+	text-align: justify;
 	font-size: 19px;
 	color: var(--black);
 }
 
 .about-me-list-body {
 	font-family: var(--copy);
-	text-align: left;
+	text-align: center;
 	font-size: 25px;
 	font-weight: 300;
 	color: var(--black);
 }
 
+@media screen and (min-width: 320px) and (max-width: 786px) {
+	.about-me-card-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about-me-body {
+		font-size: 14px;
+		margin-right: 50px;
+	}
+
+	.about-me-column-1, .about-me-column-2 {
+		margin: auto;
+	}
+
+	.about-me-heading, .about-me-heading-2 {
+		font-size: 30px;
+		text-align: center;
+		margin: auto;
+	}
+
+	.about-me-list-body {
+		font-size: 18px;
+		text-align: left;
+		margin: auto;
+	}
+
+	.cs-border-2 {
+		border-bottom: 1px solid var(--black);
+		margin: auto;
+	}
+
+	.icon-image {
+		height: 40px;
+	}
+
+	.ii-2 {
+		height: 15px;
+	}
+
+	.skill-list {
+		text-align: left;
+	}
+}
