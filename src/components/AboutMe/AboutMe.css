@@ -134,44 +134,61 @@
 	color: var(--black);
 }
 
-@media screen and (min-width: 320px) and (max-width: 786px) {
+@media screen and (max-width: 786px) {
 	.about-me-card-container {
 		display: flex;
 		flex-direction: column;
 	}
 
 	.about-me-body {
-		font-size: 14px;
-		margin-right: 50px;
+		font-size: 17px;
+		margin: 10px;
 	}
 
 	.about-me-column-1, .about-me-column-2 {
+		margin: auto;
+		display: flex;
+	}
+
+	.about-me-column-2 {
+		margin-left: -25px;
+	}
+
+	.about-me-column-2-container, .about-me-list-body {
+		text-align: left;
+		justify-content: left;
 		margin: auto;
 	}
 
 	.about-me-heading, .about-me-heading-2 {
 		font-size: 30px;
-		text-align: center;
-		margin: auto;
-	}
-
-	.about-me-list-body {
-		font-size: 18px;
 		text-align: left;
 		margin: auto;
+		margin-left: 10px;
+	}
+
+	.about-me-heading-2 {
+		margin-top: -25px;
+		margin-left: 40px;
+	}
+	.about-me-list-body {
+		font-size: 19px;
+		text-align: left;
+		margin: auto;
+		font-weight: 400;
 	}
 
 	.cs-border-2 {
-		border-bottom: 1px solid var(--black);
-		margin: auto;
+		display: none;
 	}
 
-	.icon-image {
-		height: 40px;
+	.icon-images {
+		display: none;
 	}
 
-	.ii-2 {
-		height: 15px;
+	.row {
+		justify-content: flex-start;
+		text-align: left;
 	}
 
 	.skill-list {
