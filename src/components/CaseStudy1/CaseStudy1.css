@@ -19,33 +19,20 @@
 .cs-card {
 	grid-column: viewport; 
 	display: inherit;
-	height: auto;
+	height: auto;	
+}
+
+.cs-card-container {
+	display: flex;
+	flex-direction: column;
 	width: 850px;
 	background-color: whitesmoke;
 	padding: 15px;
 }
 
-.cs-container-1 {
-	display: grid;
-	grid-column-start: 1;
-	grid-row-start: 1;
-}
-
-.cs-container-2 {
-	display: grid;
-	grid-column-start: 1;
-	grid-row-start: 2;
-}
-
-.cs-container-3 {
-	display: grid;
-	grid-column-start: 1;
-	grid-row-start: 3;
-}
-
 .cs-heading {
 	display: block;
-	margin-bottom: 0px;
+	margin-bottom: 5px;
 	margin-left: 30px;
 	text-align: left;
 	font-family: var(--heading);
@@ -55,7 +42,7 @@
 }
 
 .cs-heading-2 {
-	margin-left: 30px;
+	margin-left: 0px 30px;
 	margin-top: 0px;
 }
 
@@ -65,27 +52,43 @@
 	text-align: left;
 	font-size: large;
 	color: var(--black);
-	margin-left: 30px;
-	margin-right: 30px;
+	margin: 0px 30px 0px 30px;
 }
 
+.cs-body-end {
+	margin-bottom: 25px;
+}
+
+.cs-body-img {
+ margin-right: 10px;
+ text-align: justify;
+}
+
+.cs-body-mr {
+	margin-right: 25px
+}
 
 .cs-border {
-	margin: auto;
+	margin: 0px auto auto auto;
 	border-bottom: 2px solid black;
-	width: 90%;
+	width: 95%;
 	text-align: center;
 }
 
-.image-container {
-	display: block;
-	float: left;
-	text-align: center;
+.cs-caption {
 	font-style: italic;
 	font-family: var(--body);
 	font-size: 15px;
 	font-style: italic;
 	font-weight: 200;	
+}
+
+ /* images */
+
+.image-container {
+	float: left;
+	text-align: center;
+	align-self: center;
 }
 
 .image-container-center {
@@ -104,7 +107,7 @@
 	float: left;
 	align-self: center;
 	text-align: right;
-	height: 225px;
+	height: 200px;
 	border-radius: 5px;
 }
 
@@ -114,6 +117,19 @@
 	margin: auto;
 	margin-bottom: -15px;
 }
+
+.cs-video {
+	margin-left: 25px;
+	margin-top: 25px;
+	/* margin-right: 25px; */
+	float: left;
+	align-self: center;
+	text-align: right;
+	height: 250px;
+	border-radius: 5px;
+}
+
+/* credits */
 
 .cs-credits-end {
 	margin-bottom: 30px;

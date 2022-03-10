@@ -43,7 +43,7 @@
 	color: #44A1A0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 786px) {
+@media screen and (max-width: 786px) {
 	.contact-card {
 		justify-content: center;
 	}

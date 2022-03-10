@@ -12,20 +12,23 @@ export const AboutMe = () => {
 							<h1 className='about-me-heading'>About</h1>
 							<div className='about-me-body'>
 								<p>
-									I'm a web developer located in Columbia, South Carolina, mainly working in JavaScript and its libraries and frameworks.
-									I recently completed the CareerFoundry Full Stack Web Development course and have fell in love with coding.
-									I am currently looking for opportunities in the field.
+									I recently completed the CareerFoundry Full Stack Web Development course.
+									I've created projects using JavaScript, React, MongoDB, and NodeJS among others.
+									I code daily and love learning new technologies for creating responsive sites and apps.
+									I am currently looking for opportunities in the field, and am open to in office or remote roles.
 								</p>
 								<p>
 									Over the last few years, I've owned and operated two restaurants and had to adapt the businesses to prosper during the pandemic.
-									I'm proud of myself for meeting those challenges, but it led me to reevaluate my career and come to the realization that I wanted to be in a more creative field.
-									I studied Visual Communications at the University of South Carolina with a minor in graphic design.
-									I have developed many ads, print materials, and online content for a variety of companies, including my own.
+									I'm proud of myself for meeting those challenges, but it led me to reevaluate my career and realize that I wanted to be in a more creative field.
+									I have a bachelor's in Visual Communications and Graphic Design from the University of South Carolina.
+									I have developed many ads, print materials, and online content for a variety of companies including my own.
+									I'm excited to bring my business management and design skills into my new career.
 								</p>
 								<p>
 									When I'm not coding I enjoy watching films, 90's sitcoms, listening to music, and playing guitar.
 									I'm always on the lookout for the newest song or story to inspire me.
-									I excited to bring my business management and design skills into my new career.
+									I mainly work in JavaScript libraries and frameworks for frontend and backend.
+									My current goals are to learn more about open source contribution and e-commerce technologies.
 								</p>
 							</div>
 						</div>

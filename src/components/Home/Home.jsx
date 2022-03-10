@@ -18,8 +18,8 @@ export const Home = () => {
 							<p className='home-body'>Full Stack Developer | Columbia, SC</p>
 
 							<div className='row-home'>
-								<a className="card-button card-button-home" href={require('../../assets/campbell-douglass-resume.pdf')} rel="noopener noreferrer" target="pdf-frame" download>Resume</a>
-								<a className='card-button card-button-home' href="https://github.com/DCampbellCreative/" rel="noreferrer" target="_blank">GitHub</a>
+								<a className="card-button-home" href={require('../../assets/campbell-douglass-resume.pdf')} rel="noopener noreferrer" target="pdf-frame" download>Resume</a>
+								<a className='card-button-home' href="https://github.com/DCampbellCreative/" rel="noreferrer" target="_blank">GitHub</a>
 
 							</div>
 						</div>
