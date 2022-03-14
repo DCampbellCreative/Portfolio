@@ -1,13 +1,11 @@
 import React from 'react';
 import './CaseStudy4.css';
 
-export const CaseStudy4 = (props) => {
-	if (!props.showCs4) {
-		return null
-	}
+export const CaseStudy4 = () => {
+
 	return (
-		<div className="cs-container" onClick={props.onClose}>
-			<div className="cs-card" onClick={e => e.stopPropagation()}>
+		<div className="cs-container">
+			<div className="cs-card">
 				<div className="cs-card-container">
 
 					<div className="cs-container-1">
@@ -49,7 +47,7 @@ export const CaseStudy4 = (props) => {
 								<h3 className='cs-credits'>Tutor: Adam Pagels</h3>
 								<h3 className='cs-credits cs-credits-end'>Mentor: Gerrit Uit den Boogaart</h3>
 							</div>
-							<button className='cs-button' onClick={props.onClose}>Close</button>
+							<button className='cs-button'>Close</button>
 						</div>
 
 					</div>

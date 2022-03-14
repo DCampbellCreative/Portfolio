@@ -1,14 +1,13 @@
 import React from 'react';
+import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import './CaseStudy1.css';
 
 
-export const CaseStudy1 = (props) => {
-	if (!props.showCs1) {
-		return null
-	}
+export const CaseStudy1 = () => {
+
 	return (
-		<div className="cs-container" onClick={props.onClose}>
-			<div className="cs-card" onClick={e => e.stopPropagation()}>
+		<div className="cs-container" >
+			<div className="cs-card">
 				<div className="cs-card-container">
 
 
@@ -18,12 +17,12 @@ export const CaseStudy1 = (props) => {
 							ReactDex is a single page application, or SPA, created using the Javascript library React, HTML, CSS, the NPM package Lodash,
 							and the pokeapi.co API. It displays a list of Pokémon loaded from an external application programming interface, or API.
 							The list is sortable and searchable. Users can click on list items to display a modal containing detailed data about the
-							selected Pokémon. The application was originally created as a vanilla JavaScript application as part of my CareerFoundry
+							selected Pokémon. The application was originally created in vanilla JavaScript as part of my CareerFoundry
 							curriculum, I challenged myself to recreate it in React to implement new features and learn more about the library.
 							The current incarnation has many more features than the original.
 						</p>
 						<div className='image-container'>
-							<img className="cs-image" src={require('../../assets/casestudy1-1.png')} alt="jspokedex" />
+							<img className="cs-image" src={require('../../assets/casestudy1-1.png')} alt="javascript-pokedex" />
 							<p className='cs-caption'>Original app</p>
 						</div>
 					</div>
@@ -51,8 +50,8 @@ export const CaseStudy1 = (props) => {
 						I used Lodash, which I learned is much easier than creating a JavaScript sort function from scratch.
 					</p>
 					<div className='image-container-center'>
-						<img className="cs1-image-2" src={require('../../assets/casestudy1-2.png')} alt="pokedexmapfunction" />
-						<p lassName='cs-caption'>Function to map items and variable to find sprite URL</p>
+						<img className="cs1-image-2" src={require('../../assets/casestudy1-2.png')} alt="reactdex-map-function" />
+						<p className='cs-caption'>Function to map items and variable to find sprite URL</p>
 					</div>
 					<p className='cs-body cs-body-end'>
 						This was the first application I created exclusively using functional components and React hooks.
@@ -62,17 +61,6 @@ export const CaseStudy1 = (props) => {
 
 					<div className='cs-border'></div>
 
-					{/* <h1 className="cs-heading">Results</h1>
-					<p className='cs-body cs-body-end'>
-
-						This project took around 2 weeks to complete. After creating a React app from scratch I felt much confident
-						working with the library. When creating a project like this in the future I will never again set a dynamically rendered list's keys as
-						indices. I now understand why React throws that seemly unimportant error message when this is attempted. I always use Create-React-App
-						to quickly create a boilerplate application and am able to implement a CSS grid much more quickly.
-
-					</p> */}
-
-
 					<div className='cs-flex-container'>
 						<div className='image-container'>
 							<img className="cs-video" src={require('../../assets/reactdex.gif')} alt="reactdex-video" />
@@ -81,9 +69,9 @@ export const CaseStudy1 = (props) => {
 						<div>
 							<h1 className="cs-heading">Results</h1>
 							<p className='cs-body cs-body-img cs-body-mr'>
-								This project took around 2 weeks to complete. After creating a React app from scratch I felt much confident
+								This project took around 2 weeks to complete. After creating a React app from scratch I felt much more confident
 								working with the library. When creating a project like this in the future I will never again set a dynamically rendered list's keys as
-								indices. I now understand why React throws that seemly unimportant error message when this is attempted. I always use Create-React-App
+								indices. I now understand why React throws that seemly unimportant error message when this is attempted. I will always use Create-React-App
 								to quickly create a boilerplate application and am able to implement a CSS grid much more quickly.
 							</p>
 						</div>
@@ -96,7 +84,7 @@ export const CaseStudy1 = (props) => {
 							<h3 className='cs-credits'>Role: Lead Developer</h3>
 							<h3 className='cs-credits cs-credits-end'>Mentor: Gerrit Uit den Boogaart</h3>
 						</div>
-						<button className='cs-button' onClick={props.onClose}>Close</button>
+						<Link className='cs-button' to='/' >Close</Link>
 					</div>
 
 				</div>

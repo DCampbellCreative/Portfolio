@@ -1,13 +1,13 @@
 import React from 'react';
 import './CaseStudy3.css';
+import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 
-export const CaseStudy3 = (props) => {
-	if (!props.showCs3) {
-		return null
-	}
+
+export const CaseStudy3 = () => {
+
 	return (
-		<div className="cs-container" onClick={props.onClose}>
-			<div className="cs-card" onClick={e => e.stopPropagation()}>
+		<div className="cs-container" >
+			<div className="cs-card" >
 				<div className="case-study-2-card-container">
 
 					<div className="cs-container-1">
@@ -87,7 +87,7 @@ export const CaseStudy3 = (props) => {
 								<h3 className='cs2-credits'>Role: Lead Developer</h3>
 								<h3 className='cs2-credits cs2-credits-end'>Mentor: Gerrit Uit den Boogaart</h3>
 							</div>
-							<button className='cs-button' onClick={props.onClose}>Close</button>
+							<Link className='cs-button' to='/' >Close</Link>
 						</div>
 
 					</div>

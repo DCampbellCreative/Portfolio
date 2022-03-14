@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './MyWorkMobile.css';
-import { CaseStudy1 } from '../CaseStudy1/CaseStudy1';
-import { CaseStudy2 } from '../CaseStudy2/CaseStudy2';
-import { CaseStudy3 } from '../CaseStudy3/CaseStudy3';
-import { CaseStudy4 } from '../CaseStudy4/CaseStudy4';
+import { Link } from "react-router-dom";
+
 
 
 export const MyWorkMobile = () => {
-	const [showCs1, setShowCs1] = useState(false);
-	const [showCs2, setShowCs2] = useState(false);
-	const [showCs3, setShowCs3] = useState(false);
-	const [showCs4, setShowCs4] = useState(false);
-
 	return (
 		<section className="my-work-container" id='projects'>
 			<main className="project-list">
@@ -31,8 +24,7 @@ export const MyWorkMobile = () => {
 						<div className="button-container-mobile">
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/react-pokedex/" rel="noreferrer" target="_blank">Website</a>
 							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">Source Code</a>
-							<a className="card-button-mobile" onClick={() => setShowCs1(true)}>More Info</a>
-							<CaseStudy1 onClose={() => setShowCs1(false)} showCs1={showCs1} />
+							<Link className="card-button-mobile" to='/reactdex'>More Info</Link>
 						</div>
 
 					</div>
@@ -53,8 +45,7 @@ export const MyWorkMobile = () => {
 						<div className="button-container-mobile">
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Website</a>
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Source Code</a>
-							<a className="card-button-mobile" onClick={() => setShowCs2(true)}>More Info</a>
-							<CaseStudy2 onClose={() => setShowCs2(false)} showCs2={showCs2} />
+							<Link className="card-button-mobile" to='/dontbudge'>More Info</Link>
 						</div>
 
 					</div>
@@ -75,8 +66,7 @@ export const MyWorkMobile = () => {
 						<div className="button-container-mobile">
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/myFlix-Angular-client/welcome" rel="noreferrer" target="_blank">Website</a>
 							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Source Code</a>
-							<a className="card-button-mobile" onClick={() => setShowCs4(true)}>More Info</a>
-							<CaseStudy4 onClose={() => setShowCs4(false)} showCs4={showCs4} />
+							<Link className="card-button-mobile" to='/flixfix'>More Info</Link>
 						</div>
 
 					</div>
@@ -97,8 +87,8 @@ export const MyWorkMobile = () => {
 						<div className="button-container-mobile">
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/meet//" rel="noreferrer" target="_blank">Website</a>
 							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/meet" rel="noreferrer" target="_blank">Source Code</a>
-							<a className="card-button-mobile hidden" onClick={() => setShowCs3(true)}>More Info</a>
-							<CaseStudy3 onClose={() => setShowCs3(false)} showCs3={showCs3} />
+							<a className="card-button-mobile hidden">More Info</a>
+
 						</div>
 
 					</div>

@@ -1,19 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
+
 import './CaseStudy2.css';
 
-export const CaseStudy2 = (props) => {
-	if (!props.showCs2) {
-		return null
-	}
+export const CaseStudy2 = () => {
 	return (
-		<div className="cs-container" onClick={props.onClose}>
-			<div className="cs-card" onClick={e => e.stopPropagation()}>
+		<div className="cs-container">
+			<div className="cs-card" >
 				<div className="cs-card-container">
-
 
 					<h1 className="cs-heading">Don't Budge</h1>
 					<div className='cs-flex-container'>
-						<div className='cs-body cs-body-img'>
+						<div className='cs-body cs-body-img cs-body-end'>
 							Don't Budge is a lightweight budgeting app created using JavaScript, HTML, and CSS.
 							It allows users to enter their budget and expenses, and calculate a remaining balance based upon these inputs.
 							My goal was to further my understanding of the fundamentals of JavaScript and learn how to display and edit lists dynamically.
@@ -22,14 +20,12 @@ export const CaseStudy2 = (props) => {
 							a project created by another developer.
 						</div>
 						<div className='image-container'>
-							<img className="cs-image" src={require('../../assets/dontbudge2.png')} alt="dontbudge" />
-							<p className='cs-caption'>Don't Budge</p>
+							<img className="cs-image" src={require('../../assets/casestudy2-3.png')} alt="demo-budget-app" />
+							<p className='cs-caption'>Original App from FreeCodeCamp.org</p>
 						</div>
 					</div>
 
-
 					<div className='cs-border'></div>
-
 
 					<h1 className="cs-heading">Process and Challenges</h1>
 					<p className='cs-body'>
@@ -45,8 +41,8 @@ export const CaseStudy2 = (props) => {
 					</p>
 
 					<div className='image-container-center' >
-						<img className="cs2-image-2" src={require('../../assets/casestudy2-2.png')} alt="function" />
-						<p className='cs-caption'>Function to delete elements</p>
+						<img className="cs2-image-2" src={require('../../assets/casestudy2-2.png')} alt="add-list-item-function" />
+						<p className='cs-caption'>Function to add/delete list items</p>
 					</div>
 
 					<p className="cs-body cs-body-end">
@@ -58,33 +54,34 @@ export const CaseStudy2 = (props) => {
 						then this new value is subtracted from the budget value to display a new user balance.
 					</p>
 
-
-
-
 					<div className='cs-border'></div>
 
-
-
-					<h1 className="cs-heading">Results</h1>
-					<p className='cs-body'>
-						The final product took around two weeks to complete.
-						The resulting app allows users to set a budget, create and edit a list of expenses dynamically and view their
-						remaining balance based upon these inputs. All forms are validated to accept the correct values.
-						I learned a lot about the importance of indices in an array, targeting elements in the DOM, parsing user inputs for integers,
-						validating fields with conditionals, the CSS grid, and reducing arrays. When approaching
-						a project similar to this in the future, I will be sure to work with objects off the bat so dynamically generated information can
-						be more descriptive and user friendly.
-					</p>
+					<div className='cs-flex-container'>
+						<div className='image-container'>
+							<img className="cs-video" src={require('../../assets/dontbudge.gif')} alt="dont-budge-video" />
+							<p className='cs-caption'>Don't Budge</p>
+						</div>
+						<div>
+							<h1 className="cs-heading">Results</h1>
+							<p className='cs-body cs-body-img cs-body-mr'>
+								The final product took around two weeks to complete.
+								The resulting app allows users to set a budget, create and edit a list of expenses dynamically and view their
+								remaining balance based upon these inputs. All forms are validated to accept the correct values.
+								I learned a lot about the importance of indices in an array, targeting elements in the DOM, parsing user inputs for integers,
+								validating fields with conditionals, the CSS grid, and reducing arrays. When approaching
+								a project similar to this in the future, I will be sure to work with objects off the bat so dynamically generated information can
+								be more descriptive and user friendly.
+							</p>
+						</div>
+					</div>
 					<div className='cs-flex-container'>
 						<div className='cs-flex-2'>
 							<h3 className='cs-credits'>Credits</h3>
 							<h3 className='cs-credits'>Role: Lead Developer</h3>
 							<h3 className='cs-credits cs-credits-end'>Mentor: Gerrit Uit den Boogaart</h3>
 						</div>
-						<button className='cs-button' onClick={props.onClose}>Close</button>
+						<Link className='cs-button' to='/' >Close</Link>
 					</div>
-
-
 
 				</div>
 			</div >

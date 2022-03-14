@@ -1,41 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import { NavBar } from './components/NavBar/NavBar';
-import { Home } from './components/Home/Home';
-import { AboutMe } from './components/AboutMe/AboutMe'
-import { MyWork } from './components/MyWork/MyWork';
-import { Contact } from './components/Contact/Contact';
-import { MyWorkMobile } from './components/MyWorkMobile/MyWorkMobile';
-
+import React from 'react';
+import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
+import { Main } from './components/Main/Main';
+import { CaseStudy1 } from './components/CaseStudy1/CaseStudy1';
+import { CaseStudy2 } from './components/CaseStudy2/CaseStudy2';
+import { CaseStudy3 } from './components/CaseStudy3/CaseStudy3';
+import { CaseStudy4 } from './components/CaseStudy4/CaseStudy4';
 
 import './App.css';
 
+
 function App() {
 
-  const [width, setWidth] = useState(false);
-  const updateWidth = () => {
-    setWidth(window.innerWidth)
-  }
 
-  useEffect(() => {
-    window.addEventListener("load", updateWidth);
-    return () => window.removeEventListener("load", updateWidth);
-  });
-
-  useEffect(() => {
-    window.addEventListener("resize", updateWidth);
-    return () => window.removeEventListener("resize", updateWidth);
-  });
-
-
-  console.log(width);
 
   return (
     <div className="App">
-      <NavBar />
-      <Home />
-      <AboutMe />
-      {width < 786 ? <MyWorkMobile /> : <MyWork />}
-      <Contact />
+      <Router>
+
+        <Routes>
+          <Route exact path='/' element={<Main />} />
+          <Route exact path='/reactdex' element={<CaseStudy1 />} />
+          <Route exact path='/dontbudge' element={<CaseStudy2 />} />
+          <Route exact path='/meet' element={<CaseStudy3 />} />
+          <Route exact path='/flixfix' element={<CaseStudy4 />} />
+        </Routes>
+
+      </Router>
     </div>
   );
 }

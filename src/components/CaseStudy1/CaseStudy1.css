@@ -1,4 +1,4 @@
-.cs-container {
+/* .cs-container {
 	z-index: 2;
 	position: fixed;
 	left: 0;
@@ -14,18 +14,24 @@
 	justify-items: center;
 	overflow: scroll;
 	overflow-x: hidden;
+} */
+
+.cs-container {
+	max-width: 75%;
+	margin: auto;
 }
 
 .cs-card {
 	grid-column: viewport; 
 	display: inherit;
 	height: auto;	
+	align-items: center;
 }
 
 .cs-card-container {
 	display: flex;
 	flex-direction: column;
-	width: 850px;
+	/* max-width: 850px; */
 	background-color: whitesmoke;
 	padding: 15px;
 }
@@ -180,3 +186,9 @@
 	cursor: pointer;
 	opacity: .5;
 }
+
+/* @media screen and (max-width: 786px) {
+	.cs-card-container{
+		width: auto;
+	}
+} */
