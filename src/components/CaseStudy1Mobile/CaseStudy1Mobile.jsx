@@ -1,38 +1,30 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router";
-import './CaseStudy1.css';
+import './CaseStudy1Mobile.css';
 
 
-export const CaseStudy1 = () => {
-
-
-	const location = useLocation();
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, [location]);
+export const CaseStudy1Mobile = () => {
 
 	return (
-		<div className="cs-container" >
+		<div className="cs-container-mobile" >
 			<div className="cs-card">
 				<div className="cs-card-container">
 
-					<Link className='x-button' to='/' >X</Link>
 
 					<h1 className="cs-heading">ReactDex</h1>
 					<div>
-						<div className='image-container'>
-							<img className="cs-image" src={require('../../assets/casestudy1-1.png')} alt="javascript-pokedex" />
+						<div className='image-container-mobile'>
+							<img className='cs-image-mobile' src={require('../../assets/casestudy1-1.png')} alt='javascript-pokedex' />
 							<p className='cs-caption'>Original app</p>
 						</div>
-						<p className='cs-body cs-body-end'>
+						<div className='cs-body cs-body-end'>
 							ReactDex is a single page application, or SPA, created using the Javascript library React, HTML, CSS, the NPM package Lodash,
 							and the pokeapi.co API. It displays a list of Pokémon loaded from an external application programming interface, or API.
 							The list is sortable and searchable. Users can click on list items to display a modal containing detailed data about the
 							selected Pokémon. The application was originally created in vanilla JavaScript as part of my CareerFoundry
 							curriculum, I challenged myself to recreate it in React to implement new features and learn more about the library.
 							The current incarnation has many more features than the original.
-						</p>
+						</div>
 
 					</div>
 
@@ -70,8 +62,8 @@ export const CaseStudy1 = () => {
 
 					<div className='cs-border'></div>
 
-					<div>
-						<div className='image-container float-left'>
+					<div className='cs-flex-container'>
+						<div className='image-container'>
 							<img className="cs-video" src={require('../../assets/reactdex.gif')} alt="reactdex-video" />
 							<p className='cs-caption'>Reactdex</p>
 						</div>

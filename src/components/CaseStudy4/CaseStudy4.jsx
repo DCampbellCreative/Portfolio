@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './CaseStudy4.css';
 
 export const CaseStudy4 = () => {
-
 	return (
 		<div className="cs-container">
 			<div className="cs-card">
@@ -47,7 +47,7 @@ export const CaseStudy4 = () => {
 								<h3 className='cs-credits'>Tutor: Adam Pagels</h3>
 								<h3 className='cs-credits cs-credits-end'>Mentor: Gerrit Uit den Boogaart</h3>
 							</div>
-							<button className='cs-button'>Close</button>
+							<Link className='cs-button' to='/' >Close</Link>
 						</div>
 
 					</div>
