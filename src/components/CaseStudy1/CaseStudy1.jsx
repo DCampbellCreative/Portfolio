@@ -23,7 +23,7 @@ export const CaseStudy1 = () => {
 					<div>
 						<div className='image-container'>
 							<img className="cs-image" src={require('../../assets/casestudy1-1.png')} alt="javascript-pokedex" />
-							<p className='cs-caption'>Original app</p>
+							<p className='cs-caption'>Original JavaScript App</p>
 						</div>
 						<p className='cs-body cs-body-end'>
 							ReactDex is a single page application, or SPA, created using the Javascript library React, HTML, CSS, the NPM package Lodash,
@@ -89,9 +89,10 @@ export const CaseStudy1 = () => {
 
 					<div className='cs-flex-container'>
 						<div className='cs-flex-2'>
-							<h3 className='cs-credits'>Credits</h3>
-							<h3 className='cs-credits'>Role: Lead Developer</h3>
-							<h3 className='cs-credits cs-credits-end'>Mentor: Gerrit Uit den Boogaart</h3>
+							<h3 className='cs-credits'>
+								Credits<br />
+								Role: Lead Developer<br />
+								Mentor: Gerrit Uit den Boogaart</h3>
 						</div>
 						<Link className='cs-button' to='/' >Close</Link>
 					</div>
