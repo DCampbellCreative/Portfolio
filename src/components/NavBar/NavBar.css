@@ -27,7 +27,6 @@
 	flex: 1;
 	align-items: center;
 	justify-content: flex-end;
-	text-align: right;
 }
 
 .nav-bar-link {
@@ -88,15 +87,21 @@
 @media screen and (max-width: 786px) {
 	.nav-bar-container {
 		width: 100%;
+		padding-right: 25px;
 	}
 
 	.logo-image {
 		margin-left: 0px;
 	}
+
 	.nav-bar-link, .nav-bar-link-active {
 		font-weight: 400;
 		font-size: 16px;
 		width: 60px;
+	}
+
+	.nav-link-container {
+		margin-right: 10px;
 	}
 
 }

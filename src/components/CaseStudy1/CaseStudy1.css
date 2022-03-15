@@ -207,10 +207,12 @@
 	
 	.cs-heading {
 		font-size: 20px;
+		margin-left: 10px;
 	}
 
 	.cs-body{
 		font-size: 17px;
+		margin-left: 10px;
 	}
 
 	.cs-container {
@@ -238,6 +240,7 @@
 
 	.cs-credits {
 		font-size: 14px;
+		margin-left: 10px;
 	}
 
 	.cs-credits-end {
