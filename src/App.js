@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useLocation } from "react-router";
+
 import { Main } from './components/Main/Main';
-import { ScrollToTop } from './components/ScrollToTop/ScrollToTop'
 import { CaseStudy1 } from './components/CaseStudy1/CaseStudy1';
 import { CaseStudy2 } from './components/CaseStudy2/CaseStudy2';
 import { CaseStudy3 } from './components/CaseStudy3/CaseStudy3';
 import { CaseStudy4 } from './components/CaseStudy4/CaseStudy4';
+
 import './App.css';
-import { CaseStudy1Mobile } from './components/CaseStudy1Mobile/CaseStudy1Mobile';
 
 function App() {
 
