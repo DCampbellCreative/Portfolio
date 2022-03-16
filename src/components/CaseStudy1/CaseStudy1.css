@@ -119,6 +119,11 @@
 	float: left;
 }
 
+.video-container {
+	float: left;
+	margin-bottom: -10px;
+}
+
 .cs-video {
 	margin-left: 25px;
 	margin-top: 25px;
@@ -230,8 +235,15 @@
 		width: 11rem;
 	}
 
+	.video-container {
+		float: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	.cs-video {
-		width: 15rem;
+		width: 85%;
 	}
 
 	.cs-caption {
@@ -250,6 +262,17 @@
 	.cs-border {
 		border-bottom: 1px solid black;
 	}
+
+	.x-button {
+		font-size: 24px;
+	}
+	.cs-button {
+		width: 80px;
+		height: 25px;
+		font-size: 15px;
+		border: 1px solid var(--black);
+	}
+
 }
 
 @media screen and (min-width: 1200px) {

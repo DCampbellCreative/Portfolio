@@ -6,7 +6,6 @@ import './CaseStudy1.css';
 
 export const CaseStudy1 = () => {
 
-
 	const location = useLocation();
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -71,9 +70,9 @@ export const CaseStudy1 = () => {
 					<div className='cs-border'></div>
 
 					<div>
-						<div className='image-container float-left'>
+						<div className='video-container'>
 							<img className="cs-video" src={require('../../assets/reactdex.gif')} alt="reactdex-video" />
-							<p className='cs-caption'>Reactdex</p>
+							<p className='cs-caption'>Final app</p>
 						</div>
 						<div>
 							<h1 className="cs-heading">Results</h1>

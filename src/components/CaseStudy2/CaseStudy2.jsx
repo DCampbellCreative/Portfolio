@@ -1,27 +1,36 @@
-import React from 'react';
-import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router";
 
 import './CaseStudy2.css';
 
+
 export const CaseStudy2 = () => {
+	const location = useLocation();
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location]);
+
 	return (
 		<div className="cs-container">
 			<div className="cs-card" >
 				<div className="cs-card-container">
 
+					<Link className='x-button' to='/' >X</Link>
+
 					<h1 className="cs-heading">Don't Budge</h1>
-					<div className='cs-flex-container'>
-						<div className='cs-body cs-body-img cs-body-end'>
+					<div>
+						<div className='image-container'>
+							<img className="cs2-image" src={require('../../assets/casestudy2-3.png')} alt="demo-budget-app" />
+							<p className='cs-caption'>Original App from FreeCodeCamp.org</p>
+						</div>
+						<div className='cs-body cs-body-end'>
 							Don't Budge is a lightweight budgeting app created using JavaScript, HTML, and CSS.
 							It allows users to enter their budget and expenses, and calculate a remaining balance based upon these inputs.
 							My goal was to further my understanding of the fundamentals of JavaScript and learn how to display and edit lists dynamically.
 							After working primarily in the JavaScript library React for an extended period of time,
 							I challenged myself to build an app from scratch using vanilla JavaScript, based solely upon an image and short demo of
 							a project created by another developer.
-						</div>
-						<div className='image-container'>
-							<img className="cs-image" src={require('../../assets/casestudy2-3.png')} alt="demo-budget-app" />
-							<p className='cs-caption'>Original App from FreeCodeCamp.org</p>
 						</div>
 					</div>
 
@@ -41,7 +50,7 @@ export const CaseStudy2 = () => {
 					</p>
 
 					<div className='image-container-center' >
-						<img className="cs2-image-2" src={require('../../assets/casestudy2-2.png')} alt="add-list-item-function" />
+						<img className="cs1-image-2 cs2-image-center" src={require('../../assets/casestudy2-2.png')} alt="add-list-item-function" />
 						<p className='cs-caption'>Function to add/delete list items</p>
 					</div>
 
@@ -56,14 +65,14 @@ export const CaseStudy2 = () => {
 
 					<div className='cs-border'></div>
 
-					<div className='cs-flex-container'>
-						<div className='image-container'>
+					<div>
+						<div className='video-container'>
 							<img className="cs-video" src={require('../../assets/dontbudge.gif')} alt="dont-budge-video" />
-							<p className='cs-caption'>Don't Budge</p>
+							<p className='cs-caption'>Final JavaScript Application</p>
 						</div>
 						<div>
 							<h1 className="cs-heading">Results</h1>
-							<p className='cs-body cs-body-img cs-body-mr'>
+							<p className='cs-body cs-body-end'>
 								The final product took around two weeks to complete.
 								The resulting app allows users to set a budget, create and edit a list of expenses dynamically and view their
 								remaining balance based upon these inputs. All forms are validated to accept the correct values.
@@ -74,18 +83,20 @@ export const CaseStudy2 = () => {
 							</p>
 						</div>
 					</div>
+
 					<div className='cs-flex-container'>
 						<div className='cs-flex-2'>
-							<h3 className='cs-credits'>Credits</h3>
-							<h3 className='cs-credits'>Role: Lead Developer</h3>
-							<h3 className='cs-credits cs-credits-end'>Mentor: Gerrit Uit den Boogaart</h3>
+							<h3 className='cs-credits'>
+								Credits<br />
+								Role: Lead Developer<br />
+								Mentor: Gerrit Uit den Boogaart</h3>
 						</div>
 						<Link className='cs-button' to='/' >Close</Link>
 					</div>
 
 				</div>
-			</div >
-		</div >
+			</div>
+		</div>
 
 	)
 } 
