@@ -3,27 +3,26 @@
 	margin-bottom: 50px;
 }
 
-.project-list {
+/* .project-list {
 	display: grid;
 	grid-template-columns: 
         [viewport-start] minmax(1em, 1fr)
         [container-start] minmax(0, 30em) [container-end]
         minmax(1em, 1fr) [viewport-end];
 	justify-items: center;
-}
+} */
 
 .project-card-mobile {
 	grid-column: viewport; 
 	display: inherit;
 	height: auto;
-	width: 90%;
+	width: 100%;
 	background-color: var(--black);
-	margin: 15px;
-	margin-right: 20px;
-	padding: 25px;
+	margin: 15px 0px 15px 0px;
 }
 
 .card-container-mobile {
+	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -32,7 +31,7 @@
 .card-image-mobile {
 	display: flex;
 	width: 100%;
-	align-self: center;
+	align-self: flex-start;
 }
 
 .card-heading-mobile {

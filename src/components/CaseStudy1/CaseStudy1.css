@@ -211,16 +211,16 @@
 	}
 
 	.cs-body{
-		font-size: 17px;
+		font-size: 15px;
 		margin-left: 10px;
 	}
 
 	.cs-container {
-		width: 90%;
+		width: 95%;
 	}
 
 	.cs-card-container {
-		padding: 5px;
+		padding: 3px;
 	}
 	.image-container {
 		margin-bottom: -10px;
@@ -231,7 +231,7 @@
 	}
 
 	.cs-video {
-		width: 13rem;
+		width: 15rem;
 	}
 
 	.cs-caption {
@@ -245,6 +245,10 @@
 
 	.cs-credits-end {
 		margin-bottom: 0px;
+	}
+
+	.cs-border {
+		border-bottom: 1px solid black;
 	}
 }
 
