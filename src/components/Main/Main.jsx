@@ -13,7 +13,7 @@ export const Main = (props) => {
 			<NavBar />
 			<Home />
 			<AboutMe />
-			{props.width < 786 ? <MyWorkMobile /> : <MyWork />}
+			{props.width < 900 ? <MyWorkMobile /> : <MyWork />}
 			<Contact />
 		</div>
 	);

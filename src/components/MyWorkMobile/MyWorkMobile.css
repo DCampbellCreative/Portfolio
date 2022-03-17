@@ -3,15 +3,6 @@
 	margin-bottom: 50px;
 }
 
-/* .project-list {
-	display: grid;
-	grid-template-columns: 
-        [viewport-start] minmax(1em, 1fr)
-        [container-start] minmax(0, 30em) [container-end]
-        minmax(1em, 1fr) [viewport-end];
-	justify-items: center;
-} */
-
 .project-card-mobile {
 	grid-column: viewport; 
 	display: inherit;

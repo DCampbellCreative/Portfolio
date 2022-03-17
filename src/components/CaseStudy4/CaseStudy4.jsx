@@ -74,10 +74,10 @@ export const CaseStudy4 = () => {
 					<div className='cs-border'></div>
 
 					<div>
-						{/* <div className='video-container'>
-							<img className="cs-video" src={require('../../assets/dontbudge.gif')} alt="dont-budge-video" />
-							<p className='cs-caption'>Final JavaScript Application</p>
-						</div> */}
+						<div className='video-container'>
+							<img className="cs-video" src={require('../../assets/flixfix.gif')} alt="flixfix-video" />
+							<p className='cs-caption'>Flixfix Demo</p>
+						</div>
 						<div>
 							<h1 className="cs-heading">Results</h1>
 							<p className='cs-body cs-body-end'>
