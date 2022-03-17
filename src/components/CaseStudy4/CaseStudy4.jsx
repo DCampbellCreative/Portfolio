@@ -36,17 +36,17 @@ export const CaseStudy4 = () => {
 					<div className='cs-border'></div>
 
 					<h1 className="cs-heading">Process and Challenges</h1>
-					<p className='cs-body cs-body-end'>
+					<p className='cs-body'>
 						I began by initializing my project using Angular CLI. Once the boilerplate application was created, I was overwhelmed by the
 						shear amount of files created.  Going step by step following my CareerFoundry curriculum, this task became less daunting.
 						This was also my first exposure to TypeScript, similarly, I greatly over thought the concept at first but soon realized it was
 						just JavaScript with self imposed training wheels.
 					</p>
 
-					{/* <div className='image-container-center' >
-						<img className="cs1-image-2 cs2-image-center" src={require('../../assets/casestudy2-2.png')} alt="add-list-item-function" />
-						<p className='cs-caption'>Function to add/delete list items</p>
-					</div> */}
+					<div className='image-container-center' >
+						<img className="cs1-image-2 cs2-image-center" src={require('../../assets/casestudy4-2.png')} alt="add-remove-function" />
+						<p className='cs-caption'>Function to add/remove movie from favorites</p>
+					</div>
 					<p className='cs-body cs-body-end'>
 						I housed the API call functions in their own TypeScript file. I created a list of movie cards rendered from the database as the
 						main page, once a user was authenticated. Passing data between components using interpolation and data binding takes a few more steps
@@ -60,7 +60,7 @@ export const CaseStudy4 = () => {
 						the user's favorites using JavaScript was fairly straight forward. I then added a variable to check whether or not the
 						movie was already included in the array. I used the *ngClass directive to change the material UI components on the cards
 						when users added or removed a movie from their favorites. This allowed the user's to see on screen feedback representing
-						the movies in the favorite array. I used the material UI snack bar component to give further feedback to the user, in the case of
+						the movies in the favorite array. I used the material UI snack bar component to give further feedback to the user in the case of
 						successful requests or errors.
 						Once all the functionality was implemented I extensively commented my code and used TypeDoc to generate documentation.
 					</p>
@@ -76,12 +76,12 @@ export const CaseStudy4 = () => {
 					<div>
 						<div className='video-container'>
 							<img className="cs-video" src={require('../../assets/flixfix.gif')} alt="flixfix-video" />
-							<p className='cs-caption'>Flixfix Demo</p>
+							<p className='cs-caption'>FlixFix Demo</p>
 						</div>
 						<div>
 							<h1 className="cs-heading">Results</h1>
 							<p className='cs-body cs-body-end'>
-								This project took three weeks to complete, about half the time it took me to create a similar app in React just a few months back.
+								This project took three weeks to complete, about half the time it took me to create a similar app in React just a few months earlier.
 								This definitely speaks to my progression as a programmer. Problems that, at first, seemed extremely complex
 								began to seem simpler when broken down. Focusing on functions in one Angular
 								file at a time instead of trying immediately to have it working across all the files in and outside of the component was very helpful.

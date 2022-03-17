@@ -13,7 +13,8 @@
 }
 
 .card-container-mobile {
-	padding: 15px;
+	/* padding: 15px; */
+	padding: 4%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

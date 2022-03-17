@@ -15,10 +15,10 @@ export const Home = () => {
 					<div className="home-column-2">
 						<div className='home-column-2-container'>
 							<h1 className='home-heading'>Doug Campbell</h1>
-							<p className='home-body'>Full Stack Developer | Columbia, SC</p>
+							<div className='home-body'>Full Stack Developer | Columbia, SC</div>
 
 							<div className='row-home'>
-								<a className="card-button-home" href={require('../../assets/campbell-douglass-resume.pdf')} rel="noopener noreferrer" target="pdf-frame" download>Resume</a>
+								<a className="card-button-home" id='cbh-first-child' href={require('../../assets/campbell-douglass-resume.pdf')} rel="noopener noreferrer" target="pdf-frame" download>Resume</a>
 								<a className='card-button-home' href="https://github.com/DCampbellCreative/" rel="noreferrer" target="_blank">GitHub</a>
 
 							</div>

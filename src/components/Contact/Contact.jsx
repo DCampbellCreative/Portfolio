@@ -15,7 +15,7 @@ export const Contact = () => {
 						<span>/</span>
 						<a className='contact-link' href="https://github.com/DCampbellCreative/" rel="noreferrer" target="_blank">Github</a>
 						<span>/</span>
-						<a className='contact-link' href="mailto:dcampbellcreative@gmail.com" rel="noreferrer" target="_blank">Email</a>
+						<a className='contact-link' id='cl-last-child' href="mailto:dcampbellcreative@gmail.com" rel="noreferrer" target="_blank">Email</a>
 					</div>
 
 				</div>

@@ -17,7 +17,7 @@ export const MyWorkMobile = () => {
 						<p className="card-body-mobile">
 							A Pokédex created using create-react-app, lodash, pokeapi.co, and React.
 							Loads and displays a list of Pokémon from pokeapi.co and displays their names and sprites.
-							The list is searchable by name, and sortable by ID number or name ascending and descending.
+							The list is searchable by name and sortable by ID number or name ascending and descending.
 							Clicking on a list item loads a modal showing front and back sprites, height, and types of selected Pokémon.
 						</p>
 						<p className="project-tools-mobile">#HTML, #CSS, #REACT, #LODASH</p>
