@@ -21,7 +21,6 @@
 	font-size: 25px;
 	font-weight: 300;
 	color: var(--white);
-	/* margin-right: 1rem; */
 	}
 
 	.cb-1 {
@@ -44,7 +43,7 @@
 }
 
 #cl-last-child {
-	margin-right: 0px;
+	margin-right: 25px;
 }
 
 @media screen and (max-width: 786px) {
@@ -60,5 +59,9 @@
 
 	.contact-link {
 		font-weight: 400;
+	}
+
+	#cl-last-child {
+		margin-right: 0px;
 	}
 }
