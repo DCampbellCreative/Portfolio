@@ -1,8 +1,16 @@
 import React from 'react';
 import './Home.css';
+import Resume from "../../assets/campbell-douglass-resume.pdf";
 
 export const Home = () => {
+
+	const openResume = () => {
+		window.open(Resume, "_blank")
+	}
+
 	return (
+
+
 
 		<section className='home-container' id='home'>
 			<main className='home-card'>
@@ -18,7 +26,7 @@ export const Home = () => {
 							<div className='home-body'>Full Stack Developer | Columbia, SC</div>
 
 							<div className='row-home'>
-								<a className="card-button-home" id='cbh-first-child' href={require('../../assets/campbell-douglass-resume.pdf')} rel="noopener noreferrer" target="pdf-frame" download>Resume</a>
+								<a className="card-button-home" id='cbh-first-child' href={Resume} onClick={openResume} rel="noopener noreferrer" target="_blank">Resume</a>
 								<a className='card-button-home' href="https://github.com/DCampbellCreative/" rel="noreferrer" target="_blank">GitHub</a>
 
 							</div>
