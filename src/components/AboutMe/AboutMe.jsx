@@ -9,7 +9,7 @@ export const AboutMe = () => {
 
 					<article className='about-me-column-1'>
 						<div className='about-me-column-1-container'>
-							<h1 className='about-me-heading'>About</h1>
+							<h1 className='about-me-heading'>About Me</h1>
 							<div className='about-me-body'>
 								<p>
 									I recently completed the CareerFoundry Full Stack Web Development course.
