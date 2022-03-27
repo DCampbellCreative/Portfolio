@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import Resume from "../../assets/campbell-douglass-resume.pdf";
+import Resume from "../../assets/Campbell-Doug-Resume.pdf";
 
 export const Home = () => {
 
