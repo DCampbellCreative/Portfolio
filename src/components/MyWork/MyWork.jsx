@@ -85,7 +85,7 @@ export const MyWork = () => {
 					</div>
 				</article>
 
-				<article className="project-card">
+				{/* <article className="project-card">
 					<div className='card-container'>
 						<div className="column-1">
 							<div className="column-1-container">
@@ -109,7 +109,7 @@ export const MyWork = () => {
 							<img className="card-image" src={require('../../assets/meet.png')} alt="reactdex" />
 						</div>
 					</div>
-				</article>
+				</article> */}
 
 			</main>
 		</section>
