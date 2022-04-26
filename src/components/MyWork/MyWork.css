@@ -1,119 +1,119 @@
 body {
-	background-color: var(--gray);
+  background-color: var(--gray);
 }
 
 .my-work-container {
-	margin-top: 50px;
-	margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .project-list {
-	display: grid;
-	grid-template-columns: 
-        [viewport-start] minmax(1em, 1fr)
-        [container-start] minmax(0, 30em) [container-end]
-        minmax(1em, 1fr) [viewport-end];
-	justify-items: center;
+  display: grid;
+  grid-template-columns:
+    [viewport-start] minmax(1em, 1fr)
+    [container-start] minmax(0, 30em) [container-end]
+    minmax(1em, 1fr) [viewport-end];
+  justify-items: center;
 }
 
 .project-card {
-	grid-column: viewport; 
-	display: inherit;
-	height: 375px;
-	width: 1050px;
-	background-color: var(--black);
-	/* border-radius: 10px; */
-	margin: 15px;
+  grid-column: viewport;
+  display: inherit;
+  height: 375px;
+  width: 1050px;
+  background-color: var(--black);
+  /* border-radius: 10px; */
+  margin: 15px;
 }
 
 .card-container {
-	display: grid;
-	grid-gap: 1.5rem;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	grid-template-rows: repeat(1, minmax(0, 1fr));
-	
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .column-1 {
-	display: grid;
-	grid-column-start: 1;
-	margin-left: 50px;
-	height: 285px;
+  display: grid;
+  grid-column-start: 1;
+  margin-left: 50px;
+  height: 285px;
 }
 
 .column-1-container {
-	display: block;
-	justify-content: space-around;
-	flex-flow: column;
-	height: 285px;
-	margin-top: 45px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  height: 285px;
+  margin-top: 45px;
 }
 
 .card-heading {
-	display: block;
-	margin-bottom: -10px;
-	text-align: left;
-	font-family: var(--heading);
-	font-size: 50px;
-	font-weight: 600;
-	color: var(--white);
+  display: block;
+  margin-bottom: -10px;
+  text-align: left;
+  font-family: var(--heading);
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--white);
 }
 
 .card-body {
-	display: block;
-	margin-bottom: -5px;
-	font-family: var(--copy);
-	text-align: left;
-	font-size: large;
-	color: var(--white);
+  display: block;
+  margin-bottom: -5px;
+  font-family: var(--copy);
+  text-align: left;
+  font-size: large;
+  color: var(--white);
 }
 
 .project-tools {
-	display: block;
-	font-family: var(--copy);
-	text-align: left;
-	font-size: large;
-	font-style: italic;
-	color: var(--white);
+  display: block;
+  font-family: var(--copy);
+  text-align: left;
+  font-size: large;
+  font-style: italic;
+  color: var(--white);
 }
 
 .button-container {
-	display: flex;
+  display: flex;
 }
 
 .card-button {
-	display: flex;
-	border-radius: 5px;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid var(--teal);
-	font-family: var(--copy);
-	text-decoration: none;
-	text-transform: uppercase;
-	margin-right: 20px;
-	width: 125px;
-	height: 30px;
-	background-color:  var(--opaque);
-	color: var(--teal);
-	transition: 0.6s;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--teal);
+  font-family: var(--copy);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 20px;
+  width: 125px;
+  height: 30px;
+  background-color: var(--opaque);
+  color: var(--teal);
+  transition: 0.6s;
 }
 
-.card-button:hover{
-	cursor: pointer;
-	opacity: .5;
+.card-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .column-2 {
-	display: grid;
-	grid-column-start: 2;
+  display: grid;
+  grid-column-start: 2;
 }
 
 .card-image {
-	display: flex;
-	align-self: center;
-	height: 285px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  height: 285px;
 }
 
 .hidden {
-	visibility: hidden;
+  visibility: hidden;
 }

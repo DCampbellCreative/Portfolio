@@ -13,18 +13,19 @@ export const MyWorkMobile = () => {
 					<div className='card-container-mobile'>
 
 						<div className="card-heading-mobile">ReactDex</div>
-						<img className="card-image-mobile" src={require('../../assets/reactdex.png')} alt="reactdex" />
+						<img className="card-image-mobile" src={require('../../assets/reactdex-3.png')} alt="reactdex" />
 						<p className="card-body-mobile">
 							A Pokédex created using create-react-app, lodash, pokeapi.co, and React.
 							Loads and displays a list of Pokémon from pokeapi.co and displays their names and sprites.
 							The list is searchable by name and sortable by ID number or name ascending and descending.
 							Clicking on a list item loads a modal showing front and back sprites, height, and types of selected Pokémon.
+							Changes background based upon Pokémon's type.
 						</p>
 						<p className="project-tools-mobile">#HTML, #CSS, #REACT, #LODASH</p>
 						<div className="button-container-mobile">
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/react-pokedex/" rel="noreferrer" target="_blank">Website</a>
 							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">Source Code</a>
-							<Link className="card-button-mobile" to='/reactdex'>More Info</Link>
+							<Link className="card-button-mobile" to='/reactdex'>Process</Link>
 						</div>
 
 					</div>
@@ -45,7 +46,7 @@ export const MyWorkMobile = () => {
 						<div className="button-container-mobile">
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Website</a>
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Source Code</a>
-							<Link className="card-button-mobile" to='/dontbudge'>More Info</Link>
+							<Link className="card-button-mobile" to='/dontbudge'>Process</Link>
 						</div>
 
 					</div>
@@ -66,13 +67,13 @@ export const MyWorkMobile = () => {
 						<div className="button-container-mobile">
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/myFlix-Angular-client/welcome" rel="noreferrer" target="_blank">Website</a>
 							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Source Code</a>
-							<Link className="card-button-mobile" to='/flixfix'>More Info</Link>
+							<Link className="card-button-mobile" to='/flixfix'>Process</Link>
 						</div>
 
 					</div>
 				</article>
 
-				<article className="project-card-mobile">
+				{/* <article className="project-card-mobile">
 					<div className='card-container-mobile'>
 
 						<div className="card-heading-mobile">Meet</div>
@@ -92,7 +93,7 @@ export const MyWorkMobile = () => {
 						</div>
 
 					</div>
-				</article>
+				</article> */}
 
 
 			</main>

@@ -18,17 +18,18 @@ export const MyWork = () => {
 									Loads and displays a list of Pokémon from pokeapi.co and displays their names and sprites.
 									The list is searchable by name and sortable by ID number or name ascending and descending.
 									Clicking on a list item loads a modal showing front and back sprites, height, and types of selected Pokémon.
+									Changes background based upon Pokémon's type.
 								</p>
 								<p className="project-tools">#HTML, #CSS, #REACT, #LODASH</p>
 								<div className="button-container">
 									<a className="card-button" href="https://dcampbellcreative.github.io/react-pokedex/" rel="noreferrer" target="_blank">Website</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">Source Code</a>
-									<Link className="card-button" to='/reactdex'>More Info</Link>
+									<Link className="card-button" to='/reactdex'>Process</Link>
 								</div>
 							</div>
 						</div>
 						<div className='column-2'>
-							<img className="card-image" src={require('../../assets/reactdex.png')} alt="reactdex" />
+							<img className="card-image" src={require('../../assets/reactdex-3.png')} alt="reactdex" />
 
 						</div>
 					</div>
@@ -50,7 +51,7 @@ export const MyWork = () => {
 								<div className="button-container">
 									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Website</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/dont_budge" rel="noreferrer" target="_blank">Source Code</a>
-									<Link className="card-button" to='/dontbudge'>More Info</Link>
+									<Link className="card-button" to='/dontbudge'>Process</Link>
 								</div>
 							</div>
 						</div>
@@ -75,7 +76,7 @@ export const MyWork = () => {
 								<div className="button-container">
 									<a className="card-button" href="https://dcampbellcreative.github.io/myFlix-Angular-client/welcome" rel="noreferrer" target="_blank">Website</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Source Code</a>
-									<Link className="card-button" to='/flixfix'>More Info</Link>
+									<Link className="card-button" to='/flixfix'>Process</Link>
 								</div>
 							</div>
 						</div>
