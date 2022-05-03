@@ -23,7 +23,7 @@ export const Home = () => {
 					<div className="home-column-2">
 						<div className='home-column-2-container'>
 							<h1 className='home-heading'>Doug Campbell</h1>
-							<div className='home-body'>JavaScript &amp; React Developer | Columbia, SC</div>
+							<div className='home-body'>Front End Developer | Columbia, SC</div>
 
 							<div className='row-home'>
 								<a className="card-button-home" id='cbh-first-child' href={Resume} onClick={openResume} rel="noopener noreferrer" target="_blank">Resume</a>
