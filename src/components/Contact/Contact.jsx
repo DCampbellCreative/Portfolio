@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import Resume from "../../assets/Campbell-Doug-Resume.pdf"
+import { ContactForm } from '../ContactForm/ContactForm';
 
 export const Contact = () => {
 
@@ -9,12 +10,15 @@ export const Contact = () => {
 	}
 
 	return (
-		<footer className='contact-container' id='contact'>
+		<footer id='contact'>
+
 			<main className='contact-card'>
+				<span className='contact-body cb-1 mb'>Contact Me:</span>
+				<ContactForm />
 				<div className='contact-card-container'>
 
 					<div className='contact-body'>
-						<span className='cb-1'>Contact Me:</span>
+						<span className='cb-1'>Connect:</span>
 						<a className='contact-link' href={Resume} onClick={openResume} rel="noopener noreferrer" target="_blank" >Resume</a>
 						<span>/</span>
 						<a className='contact-link' href="https://www.linkedin.com/in/douglass-campbell/" rel="noreferrer" target="_blank">LinkedIn</a>
