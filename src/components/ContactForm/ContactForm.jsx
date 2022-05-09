@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import './ContactForm.css'
 
 export const ContactForm = () => {
+	const [sent, setSent] = useState('false');
 	const form = useRef();
 
 	const sendEmail = (e) => {
@@ -12,9 +13,11 @@ export const ContactForm = () => {
 		emailjs.sendForm('contact_service', 'contact_form', form.current, 'ricvyJgj76QPQnqUM')
 			.then((result) => {
 				console.log(result.text);
+				setSent(true);
 			}, (error) => {
 				console.log(error.text);
 			});
+		e.target.reset()
 	};
 
 
@@ -30,9 +33,12 @@ export const ContactForm = () => {
 			</div>
 			<div className='form-group'>
 				<label className="input-label" htmlFor='message'>Message:</label>
-				<textarea className="input-field if-text" name="message" required />
+				<textarea className="input-field if-text" name="message" placeholder="Enter your message" required />
 			</div>
-			<button className="contact-button" type="submit" value="Send">Submit</button>
+			{sent === true ?
+				<button className="contact-button" disabled>Message Sent!</button> :
+				<button className="contact-button" type="submit" value="Send">Submit</button>
+			}
 		</form>
 	)
 }
