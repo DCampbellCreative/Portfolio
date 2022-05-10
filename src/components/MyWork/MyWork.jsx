@@ -65,7 +65,7 @@ export const MyWork = () => {
 					<div className='card-container'>
 						<div className="column-1">
 							<div className="column-1-container">
-								<div className="card-heading">FlixFix</div>
+								<div className="card-heading">FlixFix Angular</div>
 								<p className="card-body">
 									Client side application created using Angular and TypeScript. Interacts with server side REST API and MongoDB database.
 									Users can register new accounts, login using existing accounts, and update and delete their current account.
@@ -82,6 +82,33 @@ export const MyWork = () => {
 						</div>
 						<div className='column-2'>
 							<img className="card-image" src={require('../../assets/flixfix.png')} alt="flixfix" />
+						</div>
+					</div>
+				</article>
+
+				<article className="project-card">
+					<div className='card-container'>
+						<div className="column-1">
+							<div className="column-1-container">
+								<div className="card-heading">FlixFix React</div>
+								<p className="card-body">
+									Client side application created using React. Interacts with server side REST API and MongoDB database.
+									UI developed using React-Bootstrap.
+									Users can register new accounts, login using existing accounts, and update and delete their current account.
+									Renders a list of movies stored in a MongoDB database.
+									Users can view detailed information about each title and add and remove titles from their favorites.
+									Process explanation coming soon!
+								</p>
+								<p className="project-tools">#REACT, #REACTBOOTSTRAP, #MONGODB, #NODEJS, #EXPRESS</p>
+								<div className="button-container">
+									<a className="card-button" href="https://main--movieapiclient.netlify.app/" rel="noreferrer" target="_blank">Website</a>
+									<a className="card-button" href="https://github.com/DCampbellCreative/movie_api-client" rel="noreferrer" target="_blank">Source Code</a>
+									<Link className="card-button hidden" to='/flixfix'>Process</Link>
+								</div>
+							</div>
+						</div>
+						<div className='column-2'>
+							<img className="card-image" src={require('../../assets/flixfixreact.png')} alt="flixfix" />
 						</div>
 					</div>
 				</article>

@@ -55,7 +55,7 @@ export const MyWorkMobile = () => {
 				<article className="project-card-mobile">
 					<div className='card-container-mobile'>
 
-						<div className="card-heading-mobile">FlixFix</div>
+						<div className="card-heading-mobile">FlixFix Angular</div>
 						<img className="card-image-mobile" src={require('../../assets/flixfix.png')} alt="flixfix" />
 						<p className="card-body-mobile">
 							Client side application created using Angular and TypeScript. Interacts with server side REST API and MongoDB database.
@@ -68,6 +68,29 @@ export const MyWorkMobile = () => {
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/myFlix-Angular-client/welcome" rel="noreferrer" target="_blank">Website</a>
 							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Source Code</a>
 							<Link className="card-button-mobile" to='/flixfix'>Process</Link>
+						</div>
+
+					</div>
+				</article>
+
+				<article className="project-card-mobile">
+					<div className='card-container-mobile'>
+
+						<div className="card-heading-mobile">FlixFix React</div>
+						<img className="card-image-mobile" src={require('../../assets/flixfixreact.png')} alt="flixfix" />
+						<p className="card-body-mobile">
+							Client side application created using React. Interacts with server side REST API and MongoDB database.
+							UI developed using React-Bootstrap.
+							Users can register new accounts, login using existing accounts, and update and delete their current account.
+							Renders a list of movies stored in a MongoDB database.
+							Users can view detailed information about each title and add and remove titles from their favorites.
+							Process explanation coming soon!
+						</p>
+						<p className="project-tools-mobile">#REACT, #REACTBOOTSTRAP, #MONGODB, #NODEJS, #EXPRESS</p>
+						<div className="button-container-mobile">
+							<a className="card-button-mobile" href="https://main--movieapiclient.netlify.app/" rel="noreferrer" target="_blank">Website</a>
+							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/movie_api-client" rel="noreferrer" target="_blank">Source Code</a>
+							<Link className="card-button-mobile hidden" to='/flixfix'>Process</Link>
 						</div>
 
 					</div>
