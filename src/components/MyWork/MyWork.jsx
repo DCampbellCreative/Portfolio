@@ -8,6 +8,43 @@ export const MyWork = () => {
 		<section className="my-work-container" id='projects'>
 			<main className="project-list">
 
+				<article className="project-card tall">
+					<div className='card-container'>
+						<div className="column-1">
+							<div className="column-1-container">
+								<div className="card-heading">FlixFix</div>
+								<p className="card-body">
+									Full Stack application created from scratch.
+									Server side REST API created using NodeJS and Express.
+									Database created using MongoDB.
+									Two separate Client side applications. React application with UI created using React Bootstrap.
+									Angular application created using TypeScript and MaterialUI.
+									Users can register new accounts, login using existing accounts, and update and delete their current account.
+									Renders a list of movies stored in database.
+									Users can view detailed information about each title and add and remove titles from their favorites.
+								</p>
+								<p className="project-tools">#REACT, #REACTBOOTSTRAP, #ANGULAR, #MATERIALUI, #TYPESCRIPT, #MONGODB, #NODEJS, #EXPRESS</p>
+
+								<div className="button-container mb-10">
+									<a className="card-button" href="https://main--movieapiclient.netlify.app/" rel="noreferrer" target="_blank">React App</a>
+									<a className="card-button" href="https://github.com/DCampbellCreative/movie_api-client" rel="noreferrer" target="_blank">React Code</a>
+									<a className="card-button" href="https://github.com/DCampbellCreative/movie_api" rel="noreferrer" target="_blank">Server Side</a>
+								</div>
+
+								<div className="button-container">
+									<a className="card-button" href="https://dcampbellcreative.github.io/myFlix-Angular-client/welcome" rel="noreferrer" target="_blank">Angular App</a>
+									<a className="card-button" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Angular Code</a>
+									<Link className="card-button" to='/flixfix'>Process</Link>
+								</div>
+
+							</div>
+						</div>
+						<div className='column-2'>
+							<img className="card-image" src={require('../../assets/flixfixreact.png')} alt="flixfix" />
+						</div>
+					</div>
+				</article>
+
 				<article className="project-card">
 					<div className='card-container'>
 						<div className="column-1">
@@ -22,7 +59,7 @@ export const MyWork = () => {
 								</p>
 								<p className="project-tools">#HTML, #CSS, #REACT, #LODASH</p>
 								<div className="button-container">
-									<a className="card-button" href="https://dcampbellcreative.github.io/react-pokedex/" rel="noreferrer" target="_blank">Website</a>
+									<a className="card-button" href="https://dcampbellcreative.github.io/react-pokedex/" rel="noreferrer" target="_blank">App</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">Source Code</a>
 									<Link className="card-button" to='/reactdex'>Process</Link>
 								</div>
@@ -49,7 +86,7 @@ export const MyWork = () => {
 								</p>
 								<p className="project-tools">#HTML, #CSS, #JAVASCRIPT</p>
 								<div className="button-container">
-									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Website</a>
+									<a className="card-button" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">App</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/dont_budge" rel="noreferrer" target="_blank">Source Code</a>
 									<Link className="card-button" to='/dontbudge'>Process</Link>
 								</div>
@@ -61,32 +98,33 @@ export const MyWork = () => {
 					</div>
 				</article>
 
-				<article className="project-card">
+
+				<article className="project-card tall">
 					<div className='card-container'>
 						<div className="column-1">
 							<div className="column-1-container">
-								<div className="card-heading">FlixFix Angular</div>
+								<div className="card-heading">Coming Soon! Sitcom Sites</div>
 								<p className="card-body">
-									Client side application created using Angular and TypeScript. Interacts with server side REST API and MongoDB database.
-									Users can register new accounts, login using existing accounts, and update and delete their current account.
-									Renders a list of movies stored in a MongoDB database.
-									Users can view detailed information about each title and add and remove titles from their favorites.
+									A full stack application with a backend created in MongoDB, NodeJS, and Express. Front end created using React and TailwindCSS.
+									I'm turning my love for 90's sitcoms into an app. Let users view facts and trivia about places used in sitcoms. Shows sets supposed real world location on map.
+									Check out my progress so far and stay tuned for the finished project!
 								</p>
-								<p className="project-tools">#ANGULAR, #MONGODB, #TYPESCRIPT, #NODEJS, #EXPRESS</p>
+								<p className="project-tools">#REACT, TAILWINDCSS, #RESTAPI, #MONGODB</p>
 								<div className="button-container">
-									<a className="card-button" href="https://dcampbellcreative.github.io/myFlix-Angular-client/welcome" rel="noreferrer" target="_blank">Website</a>
-									<a className="card-button" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Source Code</a>
-									<Link className="card-button" to='/flixfix'>Process</Link>
+									<a className="card-button" href="https://github.com/DCampbellCreative/Sitcom-Sites" rel="noreferrer" target="_blank">Source Code</a>
+									<a className="card-button" href="https://github.com/DCampbellCreative/Sitcom-Sites_Backend" rel="noreferrer" target="_blank">Server Side</a>
+									<Link className="card-button hidden" to='/dontbudge'>Process</Link>
 								</div>
 							</div>
 						</div>
 						<div className='column-2'>
-							<img className="card-image" src={require('../../assets/flixfix.png')} alt="flixfix" />
+							<img className="card-image" src={require('../../assets/sitcomsites.png')} alt="reactdex" />
 						</div>
 					</div>
 				</article>
 
-				<article className="project-card">
+
+				{/* <article className="project-card">
 					<div className='card-container'>
 						<div className="column-1">
 							<div className="column-1-container">
@@ -99,7 +137,7 @@ export const MyWork = () => {
 									Users can view detailed information about each title and add and remove titles from their favorites.
 									Process explanation coming soon!
 								</p>
-								<p className="project-tools">#REACT, #REACTBOOTSTRAP, #MONGODB, #NODEJS, #EXPRESS</p>
+								<p className="project-tools"> #MONGODB, #NODEJS, #EXPRESS</p>
 								<div className="button-container">
 									<a className="card-button" href="https://main--movieapiclient.netlify.app/" rel="noreferrer" target="_blank">Website</a>
 									<a className="card-button" href="https://github.com/DCampbellCreative/movie_api-client" rel="noreferrer" target="_blank">Source Code</a>
@@ -111,7 +149,7 @@ export const MyWork = () => {
 							<img className="card-image" src={require('../../assets/flixfixreact.png')} alt="flixfix" />
 						</div>
 					</div>
-				</article>
+				</article> */}
 
 				{/* <article className="project-card">
 					<div className='card-container'>

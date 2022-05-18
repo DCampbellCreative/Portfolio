@@ -12,6 +12,38 @@ export const MyWorkMobile = () => {
 				<article className="project-card-mobile">
 					<div className='card-container-mobile'>
 
+						<div className="card-heading-mobile">FlixFix</div>
+						<img className="card-image-mobile" src={require('../../assets/flixfixreact.png')} alt="flixfix" />
+						<p className="card-body-mobile">
+							Full Stack application created from scratch.
+							Server side REST API created using NodeJS and Express.
+							Database created using MongoDB.
+							Two separate Client side applications. React application with UI created using React Bootstrap.
+							Angular application created using TypeScript and MaterialUI.
+							Users can register new accounts, login using existing accounts, and update and delete their current account.
+							Renders a list of movies stored in database.
+							Users can view detailed information about each title and add and remove titles from their favorites.
+						</p>
+						<p className="project-tools-mobile">#REACT, #REACTBOOTSTRAP, #ANGULAR, #MATERIALUI, #TYPESCRIPT, #MONGODB, #NODEJS, #EXPRESS</p>
+
+						<div className="button-container-mobile mb-10">
+							<a className="card-button-mobile" href="https://main--movieapiclient.netlify.app/" rel="noreferrer" target="_blank">React App</a>
+							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/movie_api-client" rel="noreferrer" target="_blank">React Code</a>
+							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/movie_api" rel="noreferrer" target="_blank">Server Side</a>
+						</div>
+
+						<div className="button-container-mobile">
+							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/myFlix-Angular-client/welcome" rel="noreferrer" target="_blank">Angular App</a>
+							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Angular Code</a>
+							<Link className="card-button-mobile" to='/flixfix'>Process</Link>
+						</div>
+
+					</div>
+				</article>
+
+				<article className="project-card-mobile">
+					<div className='card-container-mobile'>
+
 						<div className="card-heading-mobile">ReactDex</div>
 						<img className="card-image-mobile" src={require('../../assets/reactdex-3.png')} alt="reactdex" />
 						<p className="card-body-mobile">
@@ -23,7 +55,7 @@ export const MyWorkMobile = () => {
 						</p>
 						<p className="project-tools-mobile">#HTML, #CSS, #REACT, #LODASH</p>
 						<div className="button-container-mobile">
-							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/react-pokedex/" rel="noreferrer" target="_blank">Website</a>
+							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/react-pokedex/" rel="noreferrer" target="_blank">App</a>
 							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/react-pokedex" rel="noreferrer" target="_blank">Source Code</a>
 							<Link className="card-button-mobile" to='/reactdex'>Process</Link>
 						</div>
@@ -44,7 +76,7 @@ export const MyWorkMobile = () => {
 						</p>
 						<p className="project-tools-mobile">#HTML, #CSS, #JAVASCRIPT</p>
 						<div className="button-container-mobile">
-							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Website</a>
+							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">App</a>
 							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/dont_budge/" rel="noreferrer" target="_blank">Source Code</a>
 							<Link className="card-button-mobile" to='/dontbudge'>Process</Link>
 						</div>
@@ -55,25 +87,26 @@ export const MyWorkMobile = () => {
 				<article className="project-card-mobile">
 					<div className='card-container-mobile'>
 
-						<div className="card-heading-mobile">FlixFix Angular</div>
-						<img className="card-image-mobile" src={require('../../assets/flixfix.png')} alt="flixfix" />
+						<div className="card-heading-mobile">Coming Soon! Sitcom Sites</div>
+						<img className="card-image-mobile" src={require('../../assets/sitcomsites.png')} alt="dontbudge" />
 						<p className="card-body-mobile">
-							Client side application created using Angular and TypeScript. Interacts with server side REST API and MongoDB database.
-							Users can register new accounts, login using existing accounts, and update and delete their current account.
-							Renders a list of movies stored in a MongoDB database.
-							Users can view detailed information about each title and add and remove titles from their favorites.
+							A full stack application with a backend created in MongoDB, NodeJS, and Express. Front end created using React and TailwindCSS.
+							I'm turning my love for 90's sitcoms into an app. Let users view facts and trivia about places used in sitcoms. Shows sets supposed real world location on map.
+							Check out my progress so far and stay tuned for the finished project!
 						</p>
-						<p className="project-tools-mobile">#ANGULAR, #MONGODB, #TYPESCRIPT, #NODEJS, #EXPRESS</p>
+						<p className="project-tools-mobile">#REACT, TAILWINDCSS, #RESTAPI, #MONGODB</p>
 						<div className="button-container-mobile">
-							<a className="card-button-mobile" href="https://dcampbellcreative.github.io/myFlix-Angular-client/welcome" rel="noreferrer" target="_blank">Website</a>
-							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/myFlix-Angular-client" rel="noreferrer" target="_blank">Source Code</a>
-							<Link className="card-button-mobile" to='/flixfix'>Process</Link>
+							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/Sitcom-Sites" rel="noreferrer" target="_blank">Source Code</a>
+							<a className="card-button-mobile" href="https://github.com/DCampbellCreative/Sitcom-Sites_Backend" rel="noreferrer" target="_blank">Server Side</a>
+							<Link className="card-button-mobile hidden" to='/dontbudge'>Process</Link>
 						</div>
 
 					</div>
 				</article>
 
-				<article className="project-card-mobile">
+
+
+				{/* <article className="project-card-mobile">
 					<div className='card-container-mobile'>
 
 						<div className="card-heading-mobile">FlixFix React</div>
@@ -94,7 +127,7 @@ export const MyWorkMobile = () => {
 						</div>
 
 					</div>
-				</article>
+				</article> */}
 
 				{/* <article className="project-card-mobile">
 					<div className='card-container-mobile'>
