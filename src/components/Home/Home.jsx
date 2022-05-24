@@ -17,7 +17,7 @@ export const Home = () => {
 				<div className='home-card-container'>
 
 					<div className='home-column-1'>
-						<img className="self-portrait" src={require('../../assets/self_portrait-min.png')} alt="self-portrait"></img>
+						<img className="self-portrait" src='https://i.ibb.co/Rzf65Gj/self-portrait.png' alt="self-portrait"></img>
 					</div>
 
 					<div className="home-column-2">
