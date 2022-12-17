@@ -1,39 +1,25 @@
-/* .cs-container {
-	z-index: 2;
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.75);
-	display: grid;
-	grid-template-columns: 
-        [viewport-start] minmax(1em, 1fr)
-        [container-start] minmax(0, 30em) [container-end]
-        minmax(1em, 1fr) [viewport-end];
-	justify-items: center;
-	overflow: scroll;
-	overflow-x: hidden;
-} */
-
 .cs-container {
   width: 80%;
   margin: auto;
-}
-
-.cs-card {
-  grid-column: viewport;
-  display: inherit;
-  height: auto;
-  align-items: center;
-}
-
-.cs-card-container {
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
   padding: 15px;
 }
+
+/* .cs-card {
+  grid-column: viewport;
+  display: inherit;
+  height: auto;
+  align-items: center;
+} */
+/* 
+.cs-card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding: 15px;
+} */
 
 .cs-heading {
   display: block;
@@ -52,20 +38,16 @@
 }
 
 .cs-body {
-  /* display: block; */
   font-family: var(--copy);
   text-align: left;
-  font-size: 25px;
+  font-size: 18px;
   color: var(--black);
-  margin: 0px 30px 0px 30px;
+  margin: 20px 30px;
+  line-height: 26px;
 }
 
-.cs-body-end {
-  margin-bottom: 25px;
-}
-
-.cs-body-mr {
-  margin-right: 25px;
+.cs-body:first-child {
+  margin-top: 10px;
 }
 
 .cs-border {
@@ -78,7 +60,7 @@
 .cs-caption {
   font-style: italic;
   font-family: var(--copy);
-  font-size: 20px;
+  font-size: 16px;
   font-style: italic;
   font-weight: 400;
   text-align: center;
@@ -92,17 +74,17 @@
 }
 
 .cs-image {
+  display: flex;
   margin-bottom: -12px;
   margin-left: 12px;
   margin-right: 30px;
-  width: 20rem;
+  width: 25rem;
   border-radius: 5px;
 }
 
 .image-container-center {
   margin: auto;
   margin-top: 20px;
-  margin-bottom: -12px;
   text-align: center;
   font-style: italic;
   font-weight: 200;
@@ -110,7 +92,7 @@
 
 .cs1-image-2 {
   border-radius: 5px;
-  width: 85%;
+  width: 65%;
   margin: auto;
   margin-bottom: -15px;
 }
@@ -125,54 +107,25 @@
 
 .video-container {
   float: left;
-  margin-bottom: -10px;
 }
 
 .cs-video {
-  margin-left: 25px;
-  margin-top: 25px;
-  margin-right: 20px;
-  margin-bottom: -15px;
-  align-self: center;
-  width: 20rem;
+  margin: 25px;
+  margin-bottom: -5px;
+  width: 25rem;
   border-radius: 5px;
 }
 
 /* credits */
 
-.cs-credits-end {
-  margin-bottom: 30px;
-}
-
 .cs-flex-container {
   display: flex;
-}
-
-.cs-flex-2 {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  /* align-items: baseline; */
+  justify-content: center;
 }
 
 .cs-column {
   display: flex;
   flex-direction: column;
-}
-
-.cs-credits {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  font-family: var(--heading);
-  margin-bottom: 30px;
-  margin-left: 30px;
-  font-size: 20px;
-  color: var(--black);
-}
-
-.cs-credits-end {
-  margin-bottom: 30px;
 }
 
 /* buttons */
@@ -185,7 +138,6 @@
   font-family: var(--heading);
   font-weight: 600;
   margin-bottom: -5px;
-  transition: 0.6s;
 }
 
 .x-button:hover {
@@ -226,6 +178,7 @@
   .cs-body {
     font-size: 15px;
     margin-left: 10px;
+    margin-bottom: 1rem;
   }
 
   .cs-container {
@@ -258,15 +211,6 @@
     font-size: 15px;
   }
 
-  .cs-credits {
-    font-size: 14px;
-    margin-left: 10px;
-  }
-
-  .cs-credits-end {
-    margin-bottom: 0px;
-  }
-
   .cs-border {
     border-bottom: 1px solid black;
   }
@@ -283,17 +227,17 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .cs-container {
+  /* .cs-container {
     max-width: 1040px;
-  }
+  } */
 
-  .cs-image {
-    width: 25rem;
+  /* .cs-image {
+    width: 15rem;
     margin-bottom: -20px;
-  }
+  } */
 
-  .cs-video {
+  /* .cs-video {
     width: 30rem;
     margin-bottom: -20px;
-  }
+  } */
 }

@@ -1,50 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Main } from './components/Main/Main';
-import { CaseStudy1 } from './components/CaseStudy1/CaseStudy1';
-import { CaseStudy2 } from './components/CaseStudy2/CaseStudy2';
-import { CaseStudy3 } from './components/CaseStudy3/CaseStudy3';
-import { CaseStudy4 } from './components/CaseStudy4/CaseStudy4';
+import { Main } from "./components/Main/Main";
+import { CaseStudy } from "./components/CaseStudy/CaseStudyPage";
 
-import './App.css';
+import "./App.css";
 
 function App() {
-
   const [width, setWidth] = useState(window.innerWidth);
   const updateWidth = () => {
-    setWidth(window.innerWidth)
-  }
-
-  // useEffect(() => {
-  //   window.addEventListener("load", updateWidth);
-  //   return () => window.removeEventListener("load", updateWidth);
-  // });
+    setWidth(window.innerWidth);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", updateWidth);
     return () => window.removeEventListener("resize", updateWidth);
   });
 
-  // const location = useLocation();
-  // useEffect(() => {
-  // 	window.scrollTo(0, 0);
-  // }, [location]);
-
   console.log(width);
 
   return (
-    <div className="App">
+    <div className='App'>
       <Router>
-
         <Routes>
           <Route exact path='/' element={<Main width={width} />} />
-          <Route exact path='/reactdex' element={<CaseStudy1 />} />
-          <Route exact path='/dontbudge' element={<CaseStudy2 />} />
-          <Route exact path='/meet' element={<CaseStudy3 />} />
-          <Route exact path='/flixfix' element={<CaseStudy4 />} />
+          <Route path='/process/:processId' element={<CaseStudy />} />
         </Routes>
-
       </Router>
     </div>
   );
