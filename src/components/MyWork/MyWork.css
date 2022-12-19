@@ -1,45 +1,38 @@
-body {
-  background-color: var(--gray);
-}
-
 .my-work-container {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.project-list {
-  display: grid;
-  grid-template-columns:
-    [viewport-start] minmax(1em, 1fr)
-    [container-start] minmax(0, 30em) [container-end]
-    minmax(1em, 1fr) [viewport-end];
-  justify-items: center;
+  display: flex;
+  margin: 50px auto;
+  justify-content: center;
 }
 
 .project-card {
-  grid-column: viewport;
-  display: inherit;
+  display: flex;
   height: auto;
   width: 1050px;
   background-color: var(--black);
   margin: 15px;
-  padding: 40px 50px;
-  padding-bottom: 40px;
+}
+
+.project-card:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.project-card:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .card-container {
   display: grid;
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(1, minmax(0, 1fr));
+  padding: 40px 50px;
 }
 
 .column-1 {
   display: grid;
   grid-column-start: 1;
-  /* margin-left: 50px;
-  margin-top: 40px;
-  margin-bottom: 40px; */
 }
 
 .column-1-container {
@@ -52,17 +45,16 @@ body {
   margin: 0 0 20px 0;
   text-align: left;
   font-family: var(--heading);
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: 600;
   color: var(--white);
 }
 
 .card-body {
-  display: block;
   margin: 0 0 20px 0;
   font-family: var(--copy);
   text-align: left;
-  font-size: large;
+  font-size: 1.1rem;
   color: var(--white);
 }
 
@@ -110,10 +102,6 @@ body {
 
 .card-image {
   align-self: center;
-  justify-self: center;
   height: 285px;
-}
-
-.hidden {
-  visibility: hidden;
+  border-radius: 5px;
 }

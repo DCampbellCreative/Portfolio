@@ -2,9 +2,9 @@
   height: 100px;
   width: 100%;
   display: flex;
-  background-color: #08090c;
+  background-color: var(--black);
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
 }
@@ -13,7 +13,6 @@
   flex: 1;
   align-items: center;
   text-align: left;
-  /* margin-right: 250px; */
 }
 
 .logo-image {
@@ -25,29 +24,29 @@
 .nav-link-container {
   display: flex;
   flex: 1;
-  align-items: center;
   justify-content: flex-end;
 }
 
 .nav-bar-link {
   text-decoration: none;
   font-family: "Darker Grotesque", sans-serif;
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 400;
   height: 100px;
   width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #eadeda;
+  color: var(--white);
   background-position: center;
   transition: background 0.6s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .nav-bar-link:hover {
   background-color: var(--gray);
-  color: #44a1a0;
-  /* opacity: .75; */
+  color: var(--teal);
   cursor: pointer;
 }
 

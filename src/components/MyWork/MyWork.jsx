@@ -9,7 +9,6 @@ export const MyWork = () => {
 	return (
 		<section className="my-work-container" id='projects'>
 			<main className="project-list">
-
 				{PROJECTS.map(project => (<article className="project-card">
 					<div className='card-container'>
 						<div className="column-1">

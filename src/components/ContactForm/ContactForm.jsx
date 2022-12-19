@@ -24,15 +24,15 @@ export const ContactForm = () => {
 	return (
 		<form ref={form} onSubmit={sendEmail} className='contact-form-container'>
 			<div className='form-group'>
-				<label className="input-label" htmlFor='name'>Name:</label>
+				<label className="input-label" htmlFor='name'>Name</label>
 				<input className="input-field" type="text" name="user_name" placeholder="Enter your name" required />
 			</div>
 			<div className='form-group'>
-				<label className="input-label" htmlFor='email'>Email:</label>
+				<label className="input-label" htmlFor='email'>Email</label>
 				<input className="input-field" type="email" name="user_email" placeholder="Enter your email" required />
 			</div>
 			<div className='form-group'>
-				<label className="input-label" htmlFor='message'>Message:</label>
+				<label className="input-label" htmlFor='message'>Message</label>
 				<textarea className="input-field if-text" name="message" placeholder="Enter your message" required />
 			</div>
 			{sent === true ?

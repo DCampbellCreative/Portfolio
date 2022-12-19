@@ -1,31 +1,52 @@
 .contact-form-container {
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 
 .form-group {
   display: flex;
-  margin: auto;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  /* justify-content: center; */
 }
 
 .input-label {
   font-family: var(--copy);
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 400;
   color: var(--white);
   margin-bottom: 0.5rem;
   align-self: flex-start;
+  text-transform: uppercase;
 }
 
 .input-field {
   margin-bottom: 1rem;
-  height: 1.5rem;
   font-family: var(--copy);
   font-size: large;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+input {
+  border-radius: 5px;
+  border: 2px solid var(--black);
+}
+
+textarea {
+  border-radius: 5px;
+  border: 2px solid var(--black);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--teal);
+}
+
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--teal);
 }
 
 .if-text {
@@ -37,6 +58,7 @@
 }
 
 .contact-button {
+  display: flex;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
@@ -49,8 +71,9 @@
   background-color: var(--opaque);
   color: var(--teal);
   transition: 0.6s;
-  margin-top: 0.5rem;
+  margin-top: 0px;
   margin-bottom: 2rem;
+  margin-left: auto;
   font-size: 1rem;
   padding-bottom: 5px;
 }
@@ -61,10 +84,6 @@
 }
 
 @media screen and (max-width: 786px) {
-  .contact-form-container {
-    width: 65%;
-  }
-
   .input-label,
   .input-form {
     font-size: 18px;
