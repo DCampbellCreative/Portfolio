@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import { IconBrandGithub } from '@tabler/icons';
 import Resume from "../../assets/Campbell-Doug-Resume.pdf";
 
 export const Home = () => {

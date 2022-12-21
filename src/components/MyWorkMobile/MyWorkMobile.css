@@ -24,6 +24,7 @@
   width: 98%;
   align-self: flex-start;
   margin: 0 0 12px 0;
+  border-radius: 5px;
 }
 
 .card-heading-mobile {
@@ -38,7 +39,7 @@
 .card-body-mobile {
   margin: 0 0 12px 0;
   font-family: var(--copy);
-  text-align: justify;
+  text-align: left;
   width: 98%;
   font-size: 17px;
   color: var(--white);
@@ -55,20 +56,18 @@
 
 .button-container-mobile {
   display: flex;
-  width: 75%;
+  width: 90%;
   flex-wrap: wrap;
 }
 
 .card-button-mobile {
   display: flex;
   border-radius: 5px;
-  justify-content: center;
-  align-items: center;
   border: 2px solid var(--teal);
   font-family: var(--copy);
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 20px;
+  margin-right: 10px;
   width: 100px;
   height: 30px;
   background-color: var(--opaque);

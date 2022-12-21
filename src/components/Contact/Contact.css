@@ -83,6 +83,12 @@
     width: 80%;
   }
 
+  .contact-link-container {
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .contact-body,
   .contact-link {
     font-size: 16px;
@@ -91,5 +97,13 @@
 
   .contact-link {
     font-weight: 400;
+  }
+
+  .contact-link:nth-child(2) {
+    margin-left: 0px;
+  }
+
+  .connect {
+    display: none;
   }
 }

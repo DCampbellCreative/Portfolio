@@ -14,7 +14,7 @@ export const Contact = (props) => {
 					<ContactForm />
 					<div className='contact-card-container'>
 						<div className='contact-link-container'>
-							<span className='connect'>Connect:</span>
+							<p className='connect'>Connect:</p>
 							<button className='contact-link' onClick={props.openResume} rel="noopener noreferrer" target="_blank" >Resume</button>
 							<span>/</span>
 							<a className='contact-link' href="https://www.linkedin.com/in/douglass-campbell/" rel="noreferrer" target="_blank">LinkedIn</a>

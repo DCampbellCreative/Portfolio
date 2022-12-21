@@ -15,29 +15,52 @@
   justify-content: space-between;
 }
 
+.button-row {
+  display: flex;
+  gap: 10px;
+}
+
 .amn-card-1 {
   display: flex;
   flex-direction: column;
   text-align: left;
-  justify-content: center;
   width: 26%;
+  gap: 20px;
 }
 
 .amn-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   background-color: var(--black);
   border-radius: 15px;
   text-align: left;
   width: 32%;
-  padding-right: 20px;
 }
 
 .amn-portrait {
   object-fit: contain;
   border-radius: 15px;
-  margin: 0 0 20px 0;
+}
+
+.anm-button {
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--teal);
+  font-family: var(--copy);
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 125px;
+  height: 30px;
+  background-color: var(--opaque);
+  color: var(--teal);
+  transition: 0.6s;
+}
+
+.amn-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .amn-margin {
@@ -55,7 +78,8 @@
 }
 
 .amn-heading {
-  margin: 0px 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
   text-align: left;
   font-family: var(--heading);
   font-size: 2rem;
@@ -65,30 +89,30 @@
 
 .amn-body {
   margin: 0px 20px;
-  height: 130px;
   display: block;
   font-family: var(--copy);
   text-align: left;
   font-size: 1.1rem;
   color: var(--white);
   max-width: 325px;
+  margin-bottom: 40px;
 }
 
 .justify {
   margin: 0;
 }
 
-.amn-image {
-  width: 42px;
-}
-
-.gap {
+.amn-image-container {
   display: flex;
   gap: 15px;
-  margin-top: 0px;
+  margin-top: auto;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.amn-image {
+  width: 36px;
 }
 
 .amn-image-bg {
@@ -101,18 +125,16 @@
 
 @media screen and (max-width: 768px) {
   .amn-container {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 125px;
     margin-bottom: 50px;
     height: auto;
   }
 
   .amn-card-1 {
-    flex-direction: row;
     width: 100%;
-    gap: 20px;
     height: auto;
     margin-bottom: 20px;
   }
@@ -121,6 +143,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    gap: 10px;
   }
 
   .amn-body {
@@ -131,6 +154,8 @@
   .justify {
     text-align: left;
     font-size: 1.2rem;
+    max-width: none;
+    width: 100%;
   }
 
   .amn-portrait {
@@ -143,4 +168,8 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  /* .anm-button {
+    border: 1.5px solid var(--teal);
+  } */
 }

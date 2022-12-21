@@ -19,7 +19,7 @@ export const Main = (props) => {
 			<NavBar />
 			{/* <Home /> */}
 			{/* <AboutMe /> */}
-			<AboutMeNew />
+			<AboutMeNew openResume={openResume} />
 			{props.width < 900 ? <MyWorkMobile /> : <MyWork />}
 			<Contact openResume={openResume} />
 		</div>
