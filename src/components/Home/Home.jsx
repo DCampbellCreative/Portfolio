@@ -17,7 +17,7 @@ export const Home = () => {
 				<div className='home-card-container'>
 
 					<div className='home-column-1'>
-						<img className="self-portrait" src='https://i.ibb.co/Rzf65Gj/self-portrait.png' alt="self-portrait"></img>
+						<img className="self-portrait" src='https://i.ibb.co/Rzf65Gj/self-portrait.png' alt="Doug Campbell" />
 					</div>
 
 					<div className="home-column-2">
@@ -26,7 +26,7 @@ export const Home = () => {
 							<div className='home-body'>Front End Developer | Columbia, SC</div>
 
 							<div className='row-home'>
-								<a className="card-button-home" id='cbh-first-child' href={Resume} onClick={openResume} rel="noopener noreferrer" target="_blank">Resume</a>
+								<a className="card-button-home" href={Resume} onClick={openResume} rel="noopener noreferrer" target="_blank">Resume</a>
 								<a className='card-button-home' href="https://github.com/DCampbellCreative/" rel="noreferrer" target="_blank">GitHub</a>
 
 							</div>
