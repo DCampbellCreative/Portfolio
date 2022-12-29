@@ -23,7 +23,7 @@ function App() {
     <div className='App'>
       <Router>
         <Routes>
-          <Route exact path='/' element={<Main width={width} />} />
+          <Route path='/' element={<Main width={width} />} />
           <Route path='/process/:processId' element={<CaseStudy />} />
         </Routes>
       </Router>
